@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.16.48" id="StartViewPageDef"
+                Package="poc1.view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="CountriesView1" RangeSize="25" DataControl="MyAppModuleDataControl" id="CountriesView1Iterator"/>
+  </executables>
+  <bindings>
+    <tree IterBinding="CountriesView1Iterator" id="CountriesView1">
+      <nodeDefinition DefName="poc1.model.vo.CountriesVO" Name="CountriesView10">
+        <AttrNames>
+          <Item Value="CountryName"/>
+          <Item Value="RegionId"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+  </bindings>
+</pageDefinition>
