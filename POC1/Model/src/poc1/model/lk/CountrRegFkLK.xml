@@ -14,7 +14,7 @@
     Owner="poc1.model.vo.RegionsVO">
     <DesignTime>
       <Attr Name="_isUpdateable" Value="true"/>
-      <Attr Name="_finderName" Value="RegionsView"/>
+      <Attr Name="_finderName" Value="RegionsVO"/>
     </DesignTime>
     <AttrArray Name="Attributes">
       <Item Value="poc1.model.vo.RegionsVO.RegionId"/>
@@ -26,7 +26,7 @@
     Owner="poc1.model.vo.CountriesVO">
     <DesignTime>
       <Attr Name="_isUpdateable" Value="true"/>
-      <Attr Name="_finderName" Value="CountriesView"/>
+      <Attr Name="_finderName" Value="CountriesVO"/>
     </DesignTime>
     <AttrArray Name="Attributes">
       <Item Value="poc1.model.vo.CountriesVO.RegionId"/>

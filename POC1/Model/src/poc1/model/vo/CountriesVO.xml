@@ -14,12 +14,12 @@
   SelectAllAttributes="false"
   PageIterMode="Full">
   <ViewAccessor
-    Name="RegionsView1"
+    Name="RegionsVO1"
     ViewObjectName="poc1.model.vo.RegionsVO"
     RowLevelBinds="true"/>
   <ListBinding
     Name="LOV_RegionId"
-    ListVOName="RegionsView1"
+    ListVOName="RegionsVO1"
     NullValueFlag="start"
     NullValueId="${adfBundle['oracle.javatools.resourcebundle.SystemBundle']['NULL_VALUE_RESID']}"
     MRUCount="0">

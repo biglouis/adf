@@ -16,6 +16,9 @@
   <ViewUsage
     Name="CountriesVO1"
     ViewObjectName="poc1.model.vo.CountriesVO"/>
+  <ViewUsage
+    Name="EmployeesVO1"
+    ViewObjectName="poc1.model.vo.EmployeesVO"/>
   <ResourceBundle>
     <PropertiesBundle
       PropertiesFile="poc1.model.ModelBundle"/>
