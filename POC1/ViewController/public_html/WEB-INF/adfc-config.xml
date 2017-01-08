@@ -3,4 +3,27 @@
   <view id="StartView">
     <page>/StartView.jsf</page>
   </view>
+  <task-flow-call id="taskFlowCall1">
+    <task-flow-reference>
+      <document>/WEB-INF/boundedTaskFlow1.xml</document>
+      <id>boundedTaskFlow1</id>
+    </task-flow-reference>
+  </task-flow-call>
+  <task-flow-call id="taskFlowCall2">
+    <task-flow-reference>
+      <document>/WEB-INF/boundedTaskFlow2.xml</document>
+      <id>boundedTaskFlow2</id>
+    </task-flow-reference>
+  </task-flow-call>
+  <control-flow-rule id="__1">
+    <from-activity-id>StartView</from-activity-id>
+    <control-flow-case id="__2">
+      <from-outcome>taskFlowCall1</from-outcome>
+      <to-activity-id>taskFlowCall1</to-activity-id>
+    </control-flow-case>
+    <control-flow-case id="__3">
+      <from-outcome>taskFlowCall2</from-outcome>
+      <to-activity-id>taskFlowCall2</to-activity-id>
+    </control-flow-case>
+  </control-flow-rule>
 </adfc-config>
