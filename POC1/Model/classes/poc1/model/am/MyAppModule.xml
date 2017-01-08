@@ -6,7 +6,13 @@
   Name="MyAppModule"
   Version="12.2.1.16.48"
   InheritPersonalization="merge"
-  ClearCacheOnRollback="true">
+  ClearCacheOnRollback="true"
+  ComponentClass="poc1.model.am.MyAppModuleImpl"
+  DefClass="poc1.model.am.MyAppModuleDefImpl">
+  <DesignTime>
+    <Attr Name="_isDefCodegen" Value="true"/>
+    <Attr Name="_isCodegen" Value="true"/>
+  </DesignTime>
   <Properties>
     <SchemaBasedProperties>
       <LABEL

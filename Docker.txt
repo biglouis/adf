@@ -12,7 +12,7 @@ docker run -d -p 49160:22 -p 49161:1521 -p 49162:8080 alexeiled/docker-oracle-xe
 
 Datenbank
 
-hostname: localhost (ich musste hier 192.168.99.100 nehmen, die IP sagt mit Docker)
+hostname: 192.168.99.100
 port: 49161
 sid: xe
 username: system
@@ -20,3 +20,9 @@ password: oracle
 
 
 ALTER USER hr ACCOUNT UNLOCK IDENTIFIED BY hr;
+
+hostname: 192.168.99.100
+port: 49161
+sid: xe
+username: hr
+password: hr
