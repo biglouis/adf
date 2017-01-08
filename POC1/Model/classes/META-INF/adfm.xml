@@ -2,5 +2,4 @@
 <MetadataDirectory xmlns="http://xmlns.oracle.com/adfm/metainf" version="11.1.1.0.0">
    <BusinessComponentProjectRegistry path="poc1/model/Model.jpx"/>
    <BusinessComponentServiceRegistry path="poc1/model/am/common/bc4j.xcfg"/>
-   <BusinessComponentServiceRegistry path="poc1/model/common/bc4j.xcfg"/>
 </MetadataDirectory>

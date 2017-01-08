@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
-  <view id="StartView">
-    <page>/StartView.jsf</page>
+  <view id="Welcome">
+    <page>/Welcome.jsf</page>
   </view>
   <task-flow-call id="taskFlowCall1">
     <task-flow-reference>
@@ -16,7 +16,7 @@
     </task-flow-reference>
   </task-flow-call>
   <control-flow-rule id="__1">
-    <from-activity-id>StartView</from-activity-id>
+    <from-activity-id>Welcome</from-activity-id>
     <control-flow-case id="__2">
       <from-outcome>taskFlowCall1</from-outcome>
       <to-activity-id>taskFlowCall1</to-activity-id>

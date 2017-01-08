@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE AppModule SYSTEM "jbo_03_01.dtd">
+<!---->
+<AppModule
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="MyAppModule"
+  Version="12.2.1.16.48"
+  InheritPersonalization="merge"
+  ClearCacheOnRollback="true"
+  ComponentClass="poc1.model.am.MyAppModuleImpl"
+  DefClass="poc1.model.am.MyAppModuleDefImpl">
+  <DesignTime>
+    <Attr Name="_isDefCodegen" Value="true"/>
+    <Attr Name="_isCodegen" Value="true"/>
+  </DesignTime>
+  <Properties>
+    <SchemaBasedProperties>
+      <LABEL
+        ResId="poc1.model.am.MyAppModule_LABEL"/>
+    </SchemaBasedProperties>
+  </Properties>
+  <ViewUsage
+    Name="CountriesVO1"
+    ViewObjectName="poc1.model.vo.CountriesVO"/>
+  <ViewUsage
+    Name="EmployeesVO1"
+    ViewObjectName="poc1.model.vo.EmployeesVO"/>
+  <ResourceBundle>
+    <PropertiesBundle
+      PropertiesFile="poc1.model.ModelBundle"/>
+  </ResourceBundle>
+</AppModule>
