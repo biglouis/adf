@@ -12,7 +12,14 @@
   BindingStyle="OracleName"
   CustomQuery="false"
   SelectAllAttributes="false"
-  PageIterMode="Full">
+  PageIterMode="Full"
+  RowClass="poc1.model.vo.EmployeesVORowImpl"
+  ComponentClass="poc1.model.vo.EmployeesVOImpl"
+  DefClass="poc1.model.extensions.MyViewDefImpl">
+  <DesignTime>
+    <Attr Name="_codeGenFlag2" Value="Coll|VarAccess"/>
+    <Attr Name="_isCodegen" Value="true"/>
+  </DesignTime>
   <ViewAccessor
     Name="DepartmentsVO1"
     ViewObjectName="poc1.model.vo.DepartmentsVO"
