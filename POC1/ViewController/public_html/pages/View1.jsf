@@ -2,13 +2,13 @@
 <?audit suppress oracle.jdeveloper.jsp.check-facelets-configuration?>
 <!DOCTYPE html>
 <f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
-    <af:document title="Welcome.jsf" id="d1">
+    <af:document title="taskFlow1view.jsf" id="d1">
         <af:form id="f1">
-            <af:showDetailHeader text="Welcome" disclosed="true" id="sdh1">
+            <af:showDetailHeader text="View 1" disclosed="true" id="sdh1">
                 <f:facet name="toolbar">
-                    <af:button text="Taskflow 1" id="b1" action="callTaskflow1"/>
-                    <af:button text="Taskflow 2" id="b2" action="callTaskflow2"/>
-                    <af:toolbar id="t1"/>
+                    <af:toolbar id="t1">
+                        <af:button text="back" id="b1" action="callReturn"/>
+                    </af:toolbar>
                 </f:facet>
             </af:showDetailHeader>
         </af:form>

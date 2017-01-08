@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
   <task-flow-definition id="boundedTaskFlow1">
-    <default-activity>taskFlow1view</default-activity>
+    <default-activity>View1</default-activity>
     <data-control-scope>
       <shared/>
     </data-control-scope>
-    <view id="taskFlow1view">
-      <page>/pages/taskFlow1view.jsf</page>
+    <view id="View1">
+      <page>/pages/View1.jsf</page>
     </view>
-    <task-flow-return id="taskFlowReturn">
+    <task-flow-return id="Return">
       <outcome>
-        <name>taskFlowReturn</name>
+        <name>Return</name>
       </outcome>
     </task-flow-return>
     <control-flow-rule id="__1">
-      <from-activity-id>taskFlow1view</from-activity-id>
+      <from-activity-id>View1</from-activity-id>
       <control-flow-case id="__2">
-        <to-activity-id>taskFlowReturn</to-activity-id>
+        <from-outcome>callReturn</from-outcome>
+        <to-activity-id>Return</to-activity-id>
       </control-flow-case>
     </control-flow-rule>
   </task-flow-definition>

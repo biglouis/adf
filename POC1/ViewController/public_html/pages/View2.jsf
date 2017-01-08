@@ -4,7 +4,13 @@
 <f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
     <af:document title="taskFlow2view.jsf" id="d1">
         <af:form id="f1">
-            <af:button text="back" id="b1" action="return"/>
+            <af:showDetailHeader text="View 2" disclosed="true" id="sdh1">
+                <f:facet name="toolbar">
+                    <af:toolbar id="t1">
+                        <af:button text="back" id="b1" action="callReturn"/>
+                    </af:toolbar>
+                </f:facet>
+            </af:showDetailHeader>
         </af:form>
     </af:document>
 </f:view>

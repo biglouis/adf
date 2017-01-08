@@ -3,22 +3,22 @@
    <OverallProperties
       id="OverallProperties1">
       <property
-         name="x">91.65625</property>
+         name="x">95.89844</property>
       <property
          name="y">336.69922</property>
    </OverallProperties>
    <TaskFlowCall
       id="TaskFlowCall3">
       <property
-         name="description">&lt;html>&lt;p>&lt;b>taskFlowCall1&lt;/b>&lt;/p>&lt;p>Activity Type:  Task Flow Call&lt;/p></property>
+         name="description">&lt;html>&lt;p>&lt;b>Taskflow1&lt;/b>&lt;/p>&lt;p>Activity Type:  Task Flow Call&lt;/p></property>
       <property
-         name="activityId">taskFlowCall1</property>
+         name="activityId">Taskflow1</property>
       <property
-         name="x">263.42285</property>
+         name="x">264.0586</property>
       <property
-         name="y">83.5</property>
+         name="y">255.63281</property>
       <property
-         name="documentReference">/WEB-INF/boundedTaskFlow1.xml</property>
+         name="documentReference">/WEB-INF/taskflows/boundedTaskFlow1.xml</property>
       <property
          name="exceptionHandler">false</property>
       <property
@@ -27,15 +27,15 @@
    <TaskFlowCall
       id="TaskFlowCall4">
       <property
-         name="description">&lt;html>&lt;p>&lt;b>taskFlowCall2&lt;/b>&lt;/p>&lt;p>Activity Type:  Task Flow Call&lt;/p></property>
+         name="description">&lt;html>&lt;p>&lt;b>Taskflow2&lt;/b>&lt;/p>&lt;p>Activity Type:  Task Flow Call&lt;/p></property>
       <property
-         name="activityId">taskFlowCall2</property>
+         name="activityId">Taskflow2</property>
       <property
-         name="x">263.42285</property>
+         name="x">264.0586</property>
       <property
-         name="y">255.63281</property>
+         name="y">83.5</property>
       <property
-         name="documentReference">/WEB-INF/boundedTaskFlow2.xml</property>
+         name="documentReference">/WEB-INF/taskflows/boundedTaskFlow2.xml</property>
       <property
          name="exceptionHandler">false</property>
       <property
@@ -46,13 +46,13 @@
       <property
          name="activityId">Welcome</property>
       <property
-         name="x">44.5</property>
+         name="x">95.89844</property>
       <property
          name="description">&lt;html>&lt;p>&lt;b>Welcome&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
       <property
-         name="y">61.16797</property>
+         name="y">169.5664</property>
       <property
-         name="page">/Welcome.jsf</property>
+         name="page">/pages/Welcome.jsf</property>
       <property
          name="exceptionHandler">false</property>
    </View>
@@ -64,11 +64,11 @@
       <property
          name="tosrcid">__3</property>
       <property
-         name="fromOutcome">taskFlowCall2</property>
+         name="fromOutcome">callTaskflow2</property>
       <property
          name="fromsrcid">__1</property>
       <property
-         name="sdm:polyPoints">B50,44.5,115.234375,222.42285,255.5664,L50</property>
+         name="sdm:polyPoints">R46,136.89844,166.0,223.0586,83.43359,L50</property>
    </ControlFlowCase>
    <ControlFlowCase
       islink="true"
@@ -78,10 +78,10 @@
       <property
          name="tosrcid">__2</property>
       <property
-         name="fromOutcome">taskFlowCall1</property>
+         name="fromOutcome">callTaskflow1</property>
       <property
          name="fromsrcid">__1</property>
       <property
-         name="sdm:polyPoints">R50,85.5,61.16797,222.42285,83.43359,L50</property>
+         name="sdm:polyPoints">R54,136.89844,173.0,223.0586,255.5664,L50</property>
    </ControlFlowCase>
 </SDM>

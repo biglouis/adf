@@ -1,34 +1,39 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <SDM>
    <OverallProperties
-      id="OverallProperties1"/>
+      id="OverallProperties1">
+      <property
+         name="x">95.89844</property>
+      <property
+         name="y">266.5</property>
+   </OverallProperties>
    <View
       id="View2">
       <property
-         name="activityId">taskFlow1view</property>
+         name="activityId">View1</property>
       <property
-         name="x">398.0</property>
+         name="x">95.89844</property>
       <property
          name="start">true</property>
       <property
-         name="description">&lt;html>&lt;p>&lt;b>taskFlow1view&lt;/b> (Default Activity)&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+         name="description">&lt;html>&lt;p>&lt;b>View1&lt;/b> (Default Activity)&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
       <property
-         name="y">141.60156</property>
+         name="y">99.36719</property>
       <property
-         name="page">/taskFlow1view.jsf</property>
+         name="page">/pages/View1.jsf</property>
       <property
          name="exceptionHandler">false</property>
    </View>
    <TaskFlowReturn
       id="TaskFlowReturn3">
       <property
-         name="activityId">taskFlowReturn</property>
+         name="activityId">Return</property>
       <property
-         name="x">417.0</property>
+         name="x">283.29688</property>
       <property
-         name="description">&lt;html>&lt;p>&lt;b>taskFlowReturn&lt;/b>&lt;/p>&lt;p>Activity Type:  Task Flow Return&lt;/p>&lt;p>Outcome:  taskFlowReturn&lt;/p></property>
+         name="description">&lt;html>&lt;p>&lt;b>Return&lt;/b>&lt;/p>&lt;p>Activity Type:  Task Flow Return&lt;/p>&lt;p>Outcome:  Return&lt;/p></property>
       <property
-         name="y">283.60156</property>
+         name="y">99.36719</property>
       <property
          name="finish">true</property>
       <property
@@ -40,8 +45,8 @@
       from="View2"
       to="TaskFlowReturn3">
       <property
-         name="fromOutcome">*</property>
+         name="fromOutcome">callReturn</property>
       <property
-         name="sdm:polyPoints">B50,398.0,196.41463,417.00003,228.65569,T50</property>
+         name="sdm:polyPoints">R50,136.89844,99.30078,242.29688,99.30078,L50</property>
    </ControlFlowCase>
 </SDM>
