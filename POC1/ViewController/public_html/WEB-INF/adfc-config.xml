@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
   <view id="Welcome">
-    <page>/Welcome.jsf</page>
+    <page>/pages/Welcome.jsf</page>
   </view>
   <task-flow-call id="taskFlowCall1">
     <task-flow-reference>
-      <document>/WEB-INF/boundedTaskFlow1.xml</document>
+      <document>/WEB-INF/taskflows/boundedTaskFlow1.xml</document>
       <id>boundedTaskFlow1</id>
     </task-flow-reference>
   </task-flow-call>
   <task-flow-call id="taskFlowCall2">
     <task-flow-reference>
-      <document>/WEB-INF/boundedTaskFlow2.xml</document>
+      <document>/WEB-INF/taskflows/boundedTaskFlow2.xml</document>
       <id>boundedTaskFlow2</id>
     </task-flow-reference>
   </task-flow-call>

@@ -6,7 +6,7 @@
       <shared/>
     </data-control-scope>
     <view id="taskFlow1view">
-      <page>/taskFlow1view.jsf</page>
+      <page>/pages/taskFlow1view.jsf</page>
     </view>
     <task-flow-return id="taskFlowReturn">
       <outcome>
