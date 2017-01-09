@@ -287,4 +287,7 @@
    <hash n="oracle.jdevimpl.config.JProjectPaths">
       <url n="outputDirectory" path="classes/"/>
    </hash>
+   <hash n="ResourceBundleOptions">
+      <value n="DefaultProjectBundleName" v="poc1.model.bundles.ModelBundle"/>
+   </hash>
 </jpr:project>

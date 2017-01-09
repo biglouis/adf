@@ -3,44 +3,43 @@
 <!---->
 <ViewLink
   xmlns="http://xmlns.oracle.com/bc4j"
-  Name="EmpJobFkLK"
+  Name="CountrRegFkLK"
   Version="12.2.1.16.48"
   InheritPersonalization="merge"
-  EntityAssociation="poc1.model.ac.EmpJobFkAC">
+  EntityAssociation="poc1.model.assocs.CountrRegFkAC">
   <ViewLinkDefEnd
-    Name="JobsView"
+    Name="RegionsView"
     Cardinality="1"
     Source="true"
-    Owner="poc1.model.vo.JobsVO">
+    Owner="poc1.model.vo.RegionsVO">
     <DesignTime>
       <Attr Name="_isUpdateable" Value="true"/>
-      <Attr Name="_minCardinality" Value="1"/>
-      <Attr Name="_finderName" Value="JobsView"/>
+      <Attr Name="_finderName" Value="RegionsVO"/>
     </DesignTime>
     <AttrArray Name="Attributes">
-      <Item Value="poc1.model.vo.JobsVO.JobId"/>
+      <Item Value="poc1.model.vo.RegionsVO.RegionId"/>
     </AttrArray>
   </ViewLinkDefEnd>
   <ViewLinkDefEnd
-    Name="EmployeesVO"
+    Name="CountriesView"
     Cardinality="-1"
-    Owner="poc1.model.vo.EmployeesVO">
+    Owner="poc1.model.vo.CountriesVO">
     <DesignTime>
       <Attr Name="_isUpdateable" Value="true"/>
-      <Attr Name="_finderName" Value="EmployeesVO"/>
+      <Attr Name="_finderName" Value="CountriesVO"/>
     </DesignTime>
     <AttrArray Name="Attributes">
-      <Item Value="poc1.model.vo.EmployeesVO.JobId"/>
+      <Item Value="poc1.model.vo.CountriesVO.RegionId"/>
     </AttrArray>
   </ViewLinkDefEnd>
   <Properties>
     <SchemaBasedProperties>
       <LABEL
-        ResId="poc1.model.lk.EmpJobFkLK_LABEL"/>
+        ResId="poc1.model.links.CountrRegFkLK_LABEL"/>
     </SchemaBasedProperties>
   </Properties>
   <ResourceBundle>
     <PropertiesBundle
-      PropertiesFile="poc1.model.ModelBundle"/>
+      PropertiesFile="poc1.model.bundles.ModelBundle"/>
   </ResourceBundle>
 </ViewLink>

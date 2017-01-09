@@ -3,43 +3,43 @@
 <!---->
 <ViewLink
   xmlns="http://xmlns.oracle.com/bc4j"
-  Name="DeptMgrFkLK"
+  Name="DeptLocFkLK"
   Version="12.2.1.16.48"
   InheritPersonalization="merge"
-  EntityAssociation="poc1.model.ac.DeptMgrFkAC">
+  EntityAssociation="poc1.model.assocs.DeptLocFkAC">
   <ViewLinkDefEnd
-    Name="EmployeesView"
+    Name="LocationsView"
     Cardinality="1"
     Source="true"
-    Owner="poc1.model.vo.EmployeesVO">
+    Owner="poc1.model.vo.LocationsVO">
     <DesignTime>
       <Attr Name="_isUpdateable" Value="true"/>
-      <Attr Name="_finderName" Value="EmployeesView"/>
+      <Attr Name="_finderName" Value="LocationsView"/>
     </DesignTime>
     <AttrArray Name="Attributes">
-      <Item Value="poc1.model.vo.EmployeesVO.EmployeeId"/>
+      <Item Value="poc1.model.vo.LocationsVO.LocationId"/>
     </AttrArray>
   </ViewLinkDefEnd>
   <ViewLinkDefEnd
-    Name="DepartmentsVO"
+    Name="DepartmentsView"
     Cardinality="-1"
     Owner="poc1.model.vo.DepartmentsVO">
     <DesignTime>
       <Attr Name="_isUpdateable" Value="true"/>
-      <Attr Name="_finderName" Value="DepartmentsVO"/>
+      <Attr Name="_finderName" Value="DepartmentsView"/>
     </DesignTime>
     <AttrArray Name="Attributes">
-      <Item Value="poc1.model.vo.DepartmentsVO.ManagerId"/>
+      <Item Value="poc1.model.vo.DepartmentsVO.LocationId"/>
     </AttrArray>
   </ViewLinkDefEnd>
   <Properties>
     <SchemaBasedProperties>
       <LABEL
-        ResId="poc1.model.lk.DeptMgrFkLK_LABEL"/>
+        ResId="poc1.model.links.DeptLocFkLK_LABEL"/>
     </SchemaBasedProperties>
   </Properties>
   <ResourceBundle>
     <PropertiesBundle
-      PropertiesFile="poc1.model.ModelBundle"/>
+      PropertiesFile="poc1.model.bundles.ModelBundle"/>
   </ResourceBundle>
 </ViewLink>

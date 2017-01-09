@@ -6,7 +6,7 @@
   Name="JhistDeptFkLK"
   Version="12.2.1.16.48"
   InheritPersonalization="merge"
-  EntityAssociation="poc1.model.ac.JhistDeptFkAC">
+  EntityAssociation="poc1.model.assocs.JhistDeptFkAC">
   <ViewLinkDefEnd
     Name="DepartmentsView"
     Cardinality="1"

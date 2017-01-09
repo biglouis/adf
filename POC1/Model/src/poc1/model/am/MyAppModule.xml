@@ -27,6 +27,6 @@
     ViewObjectName="poc1.model.vo.EmployeesVO"/>
   <ResourceBundle>
     <PropertiesBundle
-      PropertiesFile="poc1.model.ModelBundle"/>
+      PropertiesFile="poc1.model.bundles.ModelBundle"/>
   </ResourceBundle>
 </AppModule>

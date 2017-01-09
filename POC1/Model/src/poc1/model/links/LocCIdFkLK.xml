@@ -3,33 +3,33 @@
 <!---->
 <ViewLink
   xmlns="http://xmlns.oracle.com/bc4j"
-  Name="EmpManagerFkLK"
+  Name="LocCIdFkLK"
   Version="12.2.1.16.48"
   InheritPersonalization="merge"
-  EntityAssociation="poc1.model.ac.EmpManagerFkAC">
+  EntityAssociation="poc1.model.assocs.LocCIdFkAC">
   <ViewLinkDefEnd
-    Name="ManagerIdEmployeesView"
+    Name="CountriesView"
     Cardinality="1"
     Source="true"
-    Owner="poc1.model.vo.EmployeesVO">
+    Owner="poc1.model.vo.CountriesVO">
     <DesignTime>
       <Attr Name="_isUpdateable" Value="true"/>
-      <Attr Name="_finderName" Value="ManagerIdEmployeesView"/>
+      <Attr Name="_finderName" Value="CountriesView"/>
     </DesignTime>
     <AttrArray Name="Attributes">
-      <Item Value="poc1.model.vo.EmployeesVO.EmployeeId"/>
+      <Item Value="poc1.model.vo.CountriesVO.CountryId"/>
     </AttrArray>
   </ViewLinkDefEnd>
   <ViewLinkDefEnd
-    Name="EmployeesVO"
+    Name="LocationsVO"
     Cardinality="-1"
-    Owner="poc1.model.vo.EmployeesVO">
+    Owner="poc1.model.vo.LocationsVO">
     <DesignTime>
       <Attr Name="_isUpdateable" Value="true"/>
-      <Attr Name="_finderName" Value="EmployeesVO"/>
+      <Attr Name="_finderName" Value="LocationsVO"/>
     </DesignTime>
     <AttrArray Name="Attributes">
-      <Item Value="poc1.model.vo.EmployeesVO.ManagerId"/>
+      <Item Value="poc1.model.vo.LocationsVO.CountryId"/>
     </AttrArray>
   </ViewLinkDefEnd>
 </ViewLink>

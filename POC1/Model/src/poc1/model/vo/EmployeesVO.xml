@@ -157,17 +157,17 @@
   </ViewAttribute>
   <ViewLinkAccessor
     Name="EmployeesVO"
-    ViewLink="poc1.model.lk.EmpManagerFkLK"
+    ViewLink="poc1.model.links.EmpManagerFkLK"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
   <ViewLinkAccessor
     Name="DepartmentsVO"
-    ViewLink="poc1.model.lk.DeptMgrFkLK"
+    ViewLink="poc1.model.links.DeptMgrFkLK"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
   <ViewLinkAccessor
     Name="JobHistoryVO"
-    ViewLink="poc1.model.lk.JhistEmpFkLK"
+    ViewLink="poc1.model.links.JhistEmpFkLK"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
 </ViewObject>

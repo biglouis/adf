@@ -6,7 +6,7 @@
   Name="EmpDeptFkLK"
   Version="12.2.1.16.48"
   InheritPersonalization="merge"
-  EntityAssociation="poc1.model.ac.EmpDeptFkAC">
+  EntityAssociation="poc1.model.assocs.EmpDeptFkAC">
   <ViewLinkDefEnd
     Name="DepartmentsView1_1"
     Cardinality="1"
@@ -35,11 +35,11 @@
   <Properties>
     <SchemaBasedProperties>
       <LABEL
-        ResId="poc1.model.lk.EmpDeptFkLK_LABEL"/>
+        ResId="poc1.model.links.EmpDeptFkLK_LABEL"/>
     </SchemaBasedProperties>
   </Properties>
   <ResourceBundle>
     <PropertiesBundle
-      PropertiesFile="poc1.model.ModelBundle"/>
+      PropertiesFile="poc1.model.bundles.ModelBundle"/>
   </ResourceBundle>
 </ViewLink>

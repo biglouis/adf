@@ -47,16 +47,16 @@
     TableName="COUNTRIES"/>
   <AccessorAttribute
     Name="Locations"
-    Association="poc1.model.ac.LocCIdFkAC"
-    AssociationEnd="poc1.model.ac.LocCIdFkAC.Locations"
-    AssociationOtherEnd="poc1.model.ac.LocCIdFkAC.Countries"
+    Association="poc1.model.assocs.LocCIdFkAC"
+    AssociationEnd="poc1.model.assocs.LocCIdFkAC.Locations"
+    AssociationOtherEnd="poc1.model.assocs.LocCIdFkAC.Countries"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
   <AccessorAttribute
     Name="Regions"
-    Association="poc1.model.ac.CountrRegFkAC"
-    AssociationEnd="poc1.model.ac.CountrRegFkAC.Regions"
-    AssociationOtherEnd="poc1.model.ac.CountrRegFkAC.Countries"
+    Association="poc1.model.assocs.CountrRegFkAC"
+    AssociationEnd="poc1.model.assocs.CountrRegFkAC.Regions"
+    AssociationOtherEnd="poc1.model.assocs.CountrRegFkAC.Countries"
     Type="oracle.jbo.server.EntityImpl"
     IsUpdateable="true"/>
   <Key

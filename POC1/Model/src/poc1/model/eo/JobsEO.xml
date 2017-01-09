@@ -57,16 +57,16 @@
     TableName="JOBS"/>
   <AccessorAttribute
     Name="Employees"
-    Association="poc1.model.ac.EmpJobFkAC"
-    AssociationEnd="poc1.model.ac.EmpJobFkAC.Employees"
-    AssociationOtherEnd="poc1.model.ac.EmpJobFkAC.Jobs"
+    Association="poc1.model.assocs.EmpJobFkAC"
+    AssociationEnd="poc1.model.assocs.EmpJobFkAC.Employees"
+    AssociationOtherEnd="poc1.model.assocs.EmpJobFkAC.Jobs"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
   <AccessorAttribute
     Name="JobHistory"
-    Association="poc1.model.ac.JhistJobFkAC"
-    AssociationEnd="poc1.model.ac.JhistJobFkAC.JobHistory"
-    AssociationOtherEnd="poc1.model.ac.JhistJobFkAC.Jobs"
+    Association="poc1.model.assocs.JhistJobFkAC"
+    AssociationEnd="poc1.model.assocs.JhistJobFkAC.JobHistory"
+    AssociationOtherEnd="poc1.model.assocs.JhistJobFkAC.Jobs"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
   <Key

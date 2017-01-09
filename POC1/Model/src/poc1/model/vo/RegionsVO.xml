@@ -31,7 +31,7 @@
     AliasName="REGION_NAME"/>
   <ViewLinkAccessor
     Name="CountriesView"
-    ViewLink="poc1.model.lk.CountrRegFkLK"
+    ViewLink="poc1.model.links.CountrRegFkLK"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
 </ViewObject>

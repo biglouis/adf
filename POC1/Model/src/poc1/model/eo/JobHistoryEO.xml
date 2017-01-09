@@ -62,23 +62,23 @@
     TableName="JOB_HISTORY"/>
   <AccessorAttribute
     Name="Departments"
-    Association="poc1.model.ac.JhistDeptFkAC"
-    AssociationEnd="poc1.model.ac.JhistDeptFkAC.Departments"
-    AssociationOtherEnd="poc1.model.ac.JhistDeptFkAC.JobHistory"
+    Association="poc1.model.assocs.JhistDeptFkAC"
+    AssociationEnd="poc1.model.assocs.JhistDeptFkAC.Departments"
+    AssociationOtherEnd="poc1.model.assocs.JhistDeptFkAC.JobHistory"
     Type="oracle.jbo.server.EntityImpl"
     IsUpdateable="true"/>
   <AccessorAttribute
     Name="Employees"
-    Association="poc1.model.ac.JhistEmpFkAC"
-    AssociationEnd="poc1.model.ac.JhistEmpFkAC.Employees"
-    AssociationOtherEnd="poc1.model.ac.JhistEmpFkAC.JobHistory"
+    Association="poc1.model.assocs.JhistEmpFkAC"
+    AssociationEnd="poc1.model.assocs.JhistEmpFkAC.Employees"
+    AssociationOtherEnd="poc1.model.assocs.JhistEmpFkAC.JobHistory"
     Type="oracle.jbo.server.EntityImpl"
     IsUpdateable="true"/>
   <AccessorAttribute
     Name="Jobs"
-    Association="poc1.model.ac.JhistJobFkAC"
-    AssociationEnd="poc1.model.ac.JhistJobFkAC.Jobs"
-    AssociationOtherEnd="poc1.model.ac.JhistJobFkAC.JobHistory"
+    Association="poc1.model.assocs.JhistJobFkAC"
+    AssociationEnd="poc1.model.assocs.JhistJobFkAC.Jobs"
+    AssociationOtherEnd="poc1.model.assocs.JhistJobFkAC.JobHistory"
     Type="oracle.jbo.server.EntityImpl"
     IsUpdateable="true"/>
   <Key

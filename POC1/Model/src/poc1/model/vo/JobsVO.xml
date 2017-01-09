@@ -44,12 +44,12 @@
     AliasName="MAX_SALARY"/>
   <ViewLinkAccessor
     Name="EmployeesVO"
-    ViewLink="poc1.model.lk.EmpJobFkLK"
+    ViewLink="poc1.model.links.EmpJobFkLK"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
   <ViewLinkAccessor
     Name="JobHistoryVO"
-    ViewLink="poc1.model.lk.JhistJobFkLK"
+    ViewLink="poc1.model.links.JhistJobFkLK"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
 </ViewObject>

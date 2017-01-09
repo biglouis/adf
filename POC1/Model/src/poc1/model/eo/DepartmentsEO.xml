@@ -54,30 +54,30 @@
     TableName="DEPARTMENTS"/>
   <AccessorAttribute
     Name="Employees"
-    Association="poc1.model.ac.DeptMgrFkAC"
-    AssociationEnd="poc1.model.ac.DeptMgrFkAC.Employees"
-    AssociationOtherEnd="poc1.model.ac.DeptMgrFkAC.Departments"
+    Association="poc1.model.assocs.DeptMgrFkAC"
+    AssociationEnd="poc1.model.assocs.DeptMgrFkAC.Employees"
+    AssociationOtherEnd="poc1.model.assocs.DeptMgrFkAC.Departments"
     Type="oracle.jbo.server.EntityImpl"
     IsUpdateable="true"/>
   <AccessorAttribute
     Name="Employees1"
-    Association="poc1.model.ac.EmpDeptFkAC"
-    AssociationEnd="poc1.model.ac.EmpDeptFkAC.Employees1"
-    AssociationOtherEnd="poc1.model.ac.EmpDeptFkAC.Departments1"
+    Association="poc1.model.assocs.EmpDeptFkAC"
+    AssociationEnd="poc1.model.assocs.EmpDeptFkAC.Employees1"
+    AssociationOtherEnd="poc1.model.assocs.EmpDeptFkAC.Departments1"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
   <AccessorAttribute
     Name="JobHistory"
-    Association="poc1.model.ac.JhistDeptFkAC"
-    AssociationEnd="poc1.model.ac.JhistDeptFkAC.JobHistory"
-    AssociationOtherEnd="poc1.model.ac.JhistDeptFkAC.Departments"
+    Association="poc1.model.assocs.JhistDeptFkAC"
+    AssociationEnd="poc1.model.assocs.JhistDeptFkAC.JobHistory"
+    AssociationOtherEnd="poc1.model.assocs.JhistDeptFkAC.Departments"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
   <AccessorAttribute
     Name="Locations"
-    Association="poc1.model.ac.DeptLocFkAC"
-    AssociationEnd="poc1.model.ac.DeptLocFkAC.Locations"
-    AssociationOtherEnd="poc1.model.ac.DeptLocFkAC.Departments"
+    Association="poc1.model.assocs.DeptLocFkAC"
+    AssociationEnd="poc1.model.assocs.DeptLocFkAC.Locations"
+    AssociationOtherEnd="poc1.model.assocs.DeptLocFkAC.Departments"
     Type="oracle.jbo.server.EntityImpl"
     IsUpdateable="true"/>
   <Key

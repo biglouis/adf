@@ -6,7 +6,7 @@
   Name="JhistJobFkLK"
   Version="12.2.1.16.48"
   InheritPersonalization="merge"
-  EntityAssociation="poc1.model.ac.JhistJobFkAC">
+  EntityAssociation="poc1.model.assocs.JhistJobFkAC">
   <ViewLinkDefEnd
     Name="JobsView"
     Cardinality="1"

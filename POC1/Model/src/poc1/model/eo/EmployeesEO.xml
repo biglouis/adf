@@ -138,44 +138,44 @@
     TableName="EMPLOYEES"/>
   <AccessorAttribute
     Name="Employees"
-    Association="poc1.model.ac.EmpManagerFkAC"
-    AssociationEnd="poc1.model.ac.EmpManagerFkAC.Employees"
-    AssociationOtherEnd="poc1.model.ac.EmpManagerFkAC.ManagerIdEmployees"
+    Association="poc1.model.assocs.EmpManagerFkAC"
+    AssociationEnd="poc1.model.assocs.EmpManagerFkAC.Employees"
+    AssociationOtherEnd="poc1.model.assocs.EmpManagerFkAC.ManagerIdEmployees"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
   <AccessorAttribute
     Name="ManagerIdEmployees"
-    Association="poc1.model.ac.EmpManagerFkAC"
-    AssociationEnd="poc1.model.ac.EmpManagerFkAC.ManagerIdEmployees"
-    AssociationOtherEnd="poc1.model.ac.EmpManagerFkAC.Employees"
+    Association="poc1.model.assocs.EmpManagerFkAC"
+    AssociationEnd="poc1.model.assocs.EmpManagerFkAC.ManagerIdEmployees"
+    AssociationOtherEnd="poc1.model.assocs.EmpManagerFkAC.Employees"
     Type="oracle.jbo.server.EntityImpl"
     IsUpdateable="true"/>
   <AccessorAttribute
     Name="Departments"
-    Association="poc1.model.ac.DeptMgrFkAC"
-    AssociationEnd="poc1.model.ac.DeptMgrFkAC.Departments"
-    AssociationOtherEnd="poc1.model.ac.DeptMgrFkAC.Employees"
+    Association="poc1.model.assocs.DeptMgrFkAC"
+    AssociationEnd="poc1.model.assocs.DeptMgrFkAC.Departments"
+    AssociationOtherEnd="poc1.model.assocs.DeptMgrFkAC.Employees"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
   <AccessorAttribute
     Name="Departments1"
-    Association="poc1.model.ac.EmpDeptFkAC"
-    AssociationEnd="poc1.model.ac.EmpDeptFkAC.Departments1"
-    AssociationOtherEnd="poc1.model.ac.EmpDeptFkAC.Employees1"
+    Association="poc1.model.assocs.EmpDeptFkAC"
+    AssociationEnd="poc1.model.assocs.EmpDeptFkAC.Departments1"
+    AssociationOtherEnd="poc1.model.assocs.EmpDeptFkAC.Employees1"
     Type="oracle.jbo.server.EntityImpl"
     IsUpdateable="true"/>
   <AccessorAttribute
     Name="Jobs"
-    Association="poc1.model.ac.EmpJobFkAC"
-    AssociationEnd="poc1.model.ac.EmpJobFkAC.Jobs"
-    AssociationOtherEnd="poc1.model.ac.EmpJobFkAC.Employees"
+    Association="poc1.model.assocs.EmpJobFkAC"
+    AssociationEnd="poc1.model.assocs.EmpJobFkAC.Jobs"
+    AssociationOtherEnd="poc1.model.assocs.EmpJobFkAC.Employees"
     Type="oracle.jbo.server.EntityImpl"
     IsUpdateable="true"/>
   <AccessorAttribute
     Name="JobHistory"
-    Association="poc1.model.ac.JhistEmpFkAC"
-    AssociationEnd="poc1.model.ac.JhistEmpFkAC.JobHistory"
-    AssociationOtherEnd="poc1.model.ac.JhistEmpFkAC.Employees"
+    Association="poc1.model.assocs.JhistEmpFkAC"
+    AssociationEnd="poc1.model.assocs.JhistEmpFkAC.JobHistory"
+    AssociationOtherEnd="poc1.model.assocs.JhistEmpFkAC.Employees"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
   <Key

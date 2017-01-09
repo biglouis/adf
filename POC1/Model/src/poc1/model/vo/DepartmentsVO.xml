@@ -44,12 +44,12 @@
     AliasName="LOCATION_ID"/>
   <ViewLinkAccessor
     Name="EmployeesView"
-    ViewLink="poc1.model.lk.EmpDeptFkLK"
+    ViewLink="poc1.model.links.EmpDeptFkLK"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
   <ViewLinkAccessor
     Name="JobHistoryVO"
-    ViewLink="poc1.model.lk.JhistDeptFkLK"
+    ViewLink="poc1.model.links.JhistDeptFkLK"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
 </ViewObject>
