@@ -3,24 +3,24 @@
    <OverallProperties
       id="OverallProperties1">
       <property
-         name="x">95.89844</property>
+         name="x">91.65625</property>
       <property
-         name="y">266.5</property>
+         name="y">91.43359</property>
    </OverallProperties>
    <View
       id="View2">
       <property
-         name="activityId">View2</property>
+         name="activityId">View1</property>
       <property
-         name="x">95.89844</property>
+         name="x">274.8125</property>
       <property
          name="start">true</property>
       <property
-         name="description">&lt;html>&lt;p>&lt;b>View2&lt;/b> (Default Activity)&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+         name="description">&lt;html>&lt;p>&lt;b>View1&lt;/b> (Default Activity)&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
       <property
          name="y">99.36719</property>
       <property
-         name="page">/pages/View2.jsf</property>
+         name="page">/pages/View1.jsf</property>
       <property
          name="exceptionHandler">false</property>
    </View>
@@ -29,11 +29,11 @@
       <property
          name="activityId">Return</property>
       <property
-         name="x">283.29688</property>
+         name="x">274.8125</property>
       <property
          name="description">&lt;html>&lt;p>&lt;b>Return&lt;/b>&lt;/p>&lt;p>Activity Type:  Task Flow Return&lt;/p>&lt;p>Outcome:  Return&lt;/p></property>
       <property
-         name="y">99.36719</property>
+         name="y">282.3672</property>
       <property
          name="finish">true</property>
       <property
@@ -45,8 +45,12 @@
       from="View2"
       to="TaskFlowReturn3">
       <property
+         name="tosrcid">__2</property>
+      <property
          name="fromOutcome">callReturn</property>
       <property
-         name="sdm:polyPoints">R50,136.89844,99.30078,242.29688,99.30078,L50</property>
+         name="fromsrcid">__1</property>
+      <property
+         name="sdm:polyPoints">B50,T50</property>
    </ControlFlowCase>
 </SDM>

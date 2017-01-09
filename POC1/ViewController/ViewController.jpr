@@ -69,6 +69,27 @@
       <string v="oracle.toplink.workbench.addin/toplinkContentSet"/>
    </list>
    <value n="defaultPackage" v="poc1.view"/>
+   <hash n="oracle.adfdtinternal.model.ide.settings.ADFMSettings">
+      <hash n="adfmContentSet">
+         <list n="pattern-filters">
+            <string v="+**"/>
+         </list>
+         <list n="url-path">
+            <url path="adfmsrc/"/>
+         </list>
+      </hash>
+      <value n="pagedefsubpackage" v="pagedefs"/>
+   </hash>
+   <hash n="oracle.bm.commonIde.data.project.ModelerProjectSettings">
+      <hash n="modelersContentSet">
+         <list n="pattern-filters">
+            <string v="+**"/>
+         </list>
+         <list n="url-path">
+            <url path="public_html/"/>
+         </list>
+      </hash>
+   </hash>
    <hash n="oracle.ide.model.DependencyConfiguration">
       <list n="dependencyList">
          <hash>
@@ -584,6 +605,10 @@
       </list>
    </hash>
    <hash n="ResourceBundleOptions">
-      <value n="BundleCreationPolicy" v="2"/>
+      <value n="BundleAutoSynchronize" v="true"/>
+      <value n="BundleCreationPolicy" v="0"/>
+      <value n="DefaultProjectBundleName" v="poc1.view.bundles.ViewControllerBundle"/>
+      <list n="RegisteredResourceBundles"/>
+      <value n="WarnAboutHardcodedTranslatableStrings" v="true"/>
    </hash>
 </jpr:project>

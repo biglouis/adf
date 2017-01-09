@@ -6,6 +6,6 @@
     <extends>alta-v1.desktop</extends>
     <render-kit-id>org.apache.myfaces.trinidad.desktop</render-kit-id>
     <style-sheet-name>skins/MySkin/MySkin.css</style-sheet-name>
-    <bundle-name>poc1.view.skinBundle</bundle-name>
+    <bundle-name>poc1.view.bundles.skinBundle</bundle-name>
   </skin>
 </skins>

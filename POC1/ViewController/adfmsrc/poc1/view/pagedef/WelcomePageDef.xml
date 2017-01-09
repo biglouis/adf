@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.16.48" id="WelcomePageDef"
-                Package="poc1.view.pd">
+                Package="poc1.view.pagedef">
   <parameters/>
   <executables>
     <variableIterator id="variables"/>
