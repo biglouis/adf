@@ -15,14 +15,6 @@
     <Attr Name="_appModuleNames0" Value="poc1.model.am.MyAppModule"/>
   </DesignTime>
   <Containee
-    Name="ac"
-    PackageName="poc1.model.ac"
-    ObjectType="JboPackage">
-    <DesignTime>
-      <Attr Name="_AS" Value="true"/>
-    </DesignTime>
-  </Containee>
-  <Containee
     Name="am"
     PackageName="poc1.model.am"
     ObjectType="JboPackage">
@@ -49,14 +41,6 @@
   <Containee
     Name="links"
     PackageName="poc1.model.links"
-    ObjectType="JboPackage">
-    <DesignTime>
-      <Attr Name="_VL" Value="true"/>
-    </DesignTime>
-  </Containee>
-  <Containee
-    Name="lk"
-    PackageName="poc1.model.lk"
     ObjectType="JboPackage">
     <DesignTime>
       <Attr Name="_VL" Value="true"/>

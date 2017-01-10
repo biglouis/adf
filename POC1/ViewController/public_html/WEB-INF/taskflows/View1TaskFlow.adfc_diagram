@@ -12,6 +12,8 @@
       <property
          name="activityId">View1</property>
       <property
+         name="pageFragment">true</property>
+      <property
          name="x">274.8125</property>
       <property
          name="start">true</property>
@@ -20,7 +22,7 @@
       <property
          name="y">99.36719</property>
       <property
-         name="page">/pages/View1.jsf</property>
+         name="page">/pages/View1.jsff</property>
       <property
          name="exceptionHandler">false</property>
    </View>
@@ -45,11 +47,7 @@
       from="View2"
       to="TaskFlowReturn3">
       <property
-         name="tosrcid">__2</property>
-      <property
          name="fromOutcome">callReturn</property>
-      <property
-         name="fromsrcid">__1</property>
       <property
          name="sdm:polyPoints">B50,T50</property>
    </ControlFlowCase>

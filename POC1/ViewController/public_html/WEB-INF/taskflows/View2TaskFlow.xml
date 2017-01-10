@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <task-flow-definition id="View2TaskFlow">
+    <default-activity>View2</default-activity>
+    <data-control-scope>
+      <shared/>
+    </data-control-scope>
+    <view id="View2">
+      <page>/pages/View2.jsff</page>
+    </view>
+    <task-flow-return id="Return">
+      <outcome>
+        <name>Return</name>
+      </outcome>
+    </task-flow-return>
+    <control-flow-rule id="__1">
+      <from-activity-id>View2</from-activity-id>
+      <control-flow-case id="__2">
+        <from-outcome>callReturn</from-outcome>
+        <to-activity-id>Return</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <use-page-fragments/>
+  </task-flow-definition>
+</adfc-config>
