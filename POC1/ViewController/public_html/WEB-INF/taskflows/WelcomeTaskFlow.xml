@@ -13,12 +13,20 @@
         <document>/WEB-INF/taskflows/View1TaskFlow.xml</document>
         <id>View1TaskFlow</id>
       </task-flow-reference>
+      <input-parameter id="__4">
+        <name>inputParameter</name>
+        <value>Parameter1</value>
+      </input-parameter>
     </task-flow-call>
     <task-flow-call id="View2TaskFlow">
       <task-flow-reference>
         <document>/WEB-INF/taskflows/View2TaskFlow.xml</document>
         <id>View2TaskFlow</id>
       </task-flow-reference>
+      <input-parameter id="__5">
+        <name>inputParameter</name>
+        <value>Parameter2</value>
+      </input-parameter>
     </task-flow-call>
     <control-flow-rule id="__1">
       <from-activity-id>Welcome</from-activity-id>
