@@ -5,6 +5,21 @@
     <data-control-scope>
       <shared/>
     </data-control-scope>
+    <managed-bean id="__3">
+      <managed-bean-name>controllerRequest</managed-bean-name>
+      <managed-bean-class>poc1.view.controller.Controller2Request</managed-bean-class>
+      <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
+    <managed-bean id="__4">
+      <managed-bean-name>controllerPageflow</managed-bean-name>
+      <managed-bean-class>poc1.view.controller.Controller2Pageflow</managed-bean-class>
+      <managed-bean-scope>pageFlow</managed-bean-scope>
+    </managed-bean>
+    <managed-bean id="__5">
+      <managed-bean-name>controllerView</managed-bean-name>
+      <managed-bean-class>poc1.view.controller.Controller2View</managed-bean-class>
+      <managed-bean-scope>view</managed-bean-scope>
+    </managed-bean>
     <view id="View2">
       <page>/pages/View2.jsff</page>
     </view>
