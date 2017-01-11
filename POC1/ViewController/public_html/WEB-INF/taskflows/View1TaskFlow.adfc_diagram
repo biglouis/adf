@@ -29,11 +29,11 @@
    <TaskFlowReturn
       id="TaskFlowReturn3">
       <property
-         name="activityId">Return</property>
+         name="activityId">Commit</property>
       <property
          name="x">274.8125</property>
       <property
-         name="description">&lt;html>&lt;p>&lt;b>Return&lt;/b>&lt;/p>&lt;p>Activity Type:  Task Flow Return&lt;/p>&lt;p>Outcome:  Return&lt;/p></property>
+         name="description">&lt;html>&lt;p>&lt;b>Commit&lt;/b>&lt;/p>&lt;p>Activity Type:  Task Flow Return&lt;/p>&lt;p>Outcome:  Commit&lt;/p></property>
       <property
          name="y">282.3672</property>
       <property

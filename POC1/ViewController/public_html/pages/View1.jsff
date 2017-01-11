@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <ui:composition xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
                 xmlns:f="http://java.sun.com/jsf/core" xmlns:c="http://java.sun.com/jsp/jstl/core">
-    <c:set var="viewcontrollerBundle" value="#{adfBundle['poc1.view.bundles.ViewControllerBundle']}"/>
-    <af:showDetailHeader text="#{viewcontrollerBundle.VIEW_1}" disclosed="true" id="sdh1">
+    <c:set var="bundle" value="#{adfBundle['poc1.view.bundles.ViewControllerBundle']}"/>
+    <af:showDetailHeader text="#{bundle.VIEW_1}: #{pageFlowScope.controllerPageflow.parameter}" disclosed="true" id="sdh1">
         <f:facet name="toolbar">
             <af:toolbar id="t1">
-                <af:button text="#{viewcontrollerBundle.ZUR_U00FCCK}" id="b1" action="callReturn"/>
+                <af:button text="#{bundle.ZUR_U00FCCK}" id="b1" action="callReturn"/>
             </af:toolbar>
         </f:facet>
     </af:showDetailHeader>

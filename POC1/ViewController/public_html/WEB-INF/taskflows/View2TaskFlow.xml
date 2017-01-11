@@ -33,16 +33,17 @@
     <view id="View2">
       <page>/pages/View2.jsff</page>
     </view>
-    <task-flow-return id="Return">
+    <task-flow-return id="Commit">
       <outcome>
-        <name>Return</name>
+        <name>Commit</name>
+        <commit/>
       </outcome>
     </task-flow-return>
     <control-flow-rule id="__1">
       <from-activity-id>View2</from-activity-id>
       <control-flow-case id="__2">
         <from-outcome>callReturn</from-outcome>
-        <to-activity-id>Return</to-activity-id>
+        <to-activity-id>Commit</to-activity-id>
       </control-flow-case>
     </control-flow-rule>
     <use-page-fragments/>
