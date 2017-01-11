@@ -3,6 +3,7 @@
 .adf
 .data
 classes/
+temp/
 cwallet.sso
 *.swp
 *.lck
