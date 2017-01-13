@@ -39,6 +39,12 @@
     <DesignTime>
       <Attr Name="_DisplaySize" Value="20"/>
     </DesignTime>
+    <Properties>
+      <SchemaBasedProperties>
+        <LABEL
+          ResId="VORNAME"/>
+      </SchemaBasedProperties>
+    </Properties>
   </Attribute>
   <Attribute
     Name="LastName"
@@ -52,6 +58,12 @@
     <DesignTime>
       <Attr Name="_DisplaySize" Value="25"/>
     </DesignTime>
+    <Properties>
+      <SchemaBasedProperties>
+        <LABEL
+          ResId="NACHNAME"/>
+      </SchemaBasedProperties>
+    </Properties>
   </Attribute>
   <Attribute
     Name="Email"
@@ -78,6 +90,12 @@
     <DesignTime>
       <Attr Name="_DisplaySize" Value="20"/>
     </DesignTime>
+    <Properties>
+      <SchemaBasedProperties>
+        <LABEL
+          ResId="TELEFON"/>
+      </SchemaBasedProperties>
+    </Properties>
   </Attribute>
   <Attribute
     Name="HireDate"
@@ -86,7 +104,14 @@
     SQLType="DATE"
     Type="java.sql.Timestamp"
     ColumnType="DATE"
-    TableName="EMPLOYEES"/>
+    TableName="EMPLOYEES">
+    <Properties>
+      <SchemaBasedProperties>
+        <LABEL
+          ResId="BESCH_U00E4FTIGT_SEIT"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </Attribute>
   <Attribute
     Name="JobId"
     IsNotNull="true"
@@ -108,7 +133,14 @@
     SQLType="NUMERIC"
     Type="java.math.BigDecimal"
     ColumnType="NUMBER"
-    TableName="EMPLOYEES"/>
+    TableName="EMPLOYEES">
+    <Properties>
+      <SchemaBasedProperties>
+        <LABEL
+          ResId="GEHALT"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </Attribute>
   <Attribute
     Name="CommissionPct"
     Precision="2"
@@ -126,7 +158,14 @@
     SQLType="NUMERIC"
     Type="java.lang.Integer"
     ColumnType="NUMBER"
-    TableName="EMPLOYEES"/>
+    TableName="EMPLOYEES">
+    <Properties>
+      <SchemaBasedProperties>
+        <LABEL
+          ResId="VORGESETZTER"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </Attribute>
   <Attribute
     Name="DepartmentId"
     Precision="4"
@@ -135,7 +174,14 @@
     SQLType="NUMERIC"
     Type="java.lang.Integer"
     ColumnType="NUMBER"
-    TableName="EMPLOYEES"/>
+    TableName="EMPLOYEES">
+    <Properties>
+      <SchemaBasedProperties>
+        <LABEL
+          ResId="ABTEILUNG"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </Attribute>
   <AccessorAttribute
     Name="Employees"
     Association="poc1.model.assocs.EmpManagerFkAC"
@@ -276,4 +322,8 @@
       <Item Value="poc1.model.eo.EmployeesEO.ManagerId"/>
     </AttrArray>
   </Key>
+  <ResourceBundle>
+    <PropertiesBundle
+      PropertiesFile="poc1.model.bundles.ModelBundle"/>
+  </ResourceBundle>
 </Entity>

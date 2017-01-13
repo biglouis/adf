@@ -13,8 +13,8 @@
                            partialSubmit="true" id="b4"/>
                 <af:button actionListener="#{bindings.Last.execute}" text="#{bundle.Last}" disabled="#{!bindings.Last.enabled}"
                            partialSubmit="true" id="b5"/>
-                <af:button text="#{bundle.Submit}" id="b6"/>
-                <af:button text="#{bundle.ZUR_U00FCCK}" id="b1" action="callReturn"/>
+                <af:button text="#{bundle.ABBRECHEN}" id="b1" action="goRollback"/>
+                <af:button text="#{bundle.SPEICHERN}" id="b7" action="goCommit"/>
             </af:toolbar>
         </f:facet>
     <af:panelFormLayout id="pfl1" maxColumns="2" rows="4">
