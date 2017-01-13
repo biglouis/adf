@@ -80,7 +80,9 @@
             </af:inputText>
             <af:selectOneChoice value="#{bindings.ManagerId.inputValue}" label="#{bindings.ManagerId.label}"
                                 required="#{bindings.ManagerId.hints.mandatory}"
-                                shortDesc="#{bindings.ManagerId.hints.tooltip}" id="soc1">
+                                shortDesc="#{bindings.ManagerId.hints.tooltip}" id="soc1"
+                                binding="#{controllerRequest.managerId}"
+                                valueChangeListener="#{controllerRequest.onChangeManagerId}" autoSubmit="true">
                 <f:selectItems value="#{bindings.ManagerId.items}" id="si1"/>
                 <f:validator binding="#{bindings.ManagerId.validator}"/>
             </af:selectOneChoice>

@@ -4,6 +4,8 @@ import javax.faces.event.ValueChangeEvent;
 
 import oracle.adf.view.rich.component.rich.input.RichInputText;
 
+import oracle.adf.view.rich.component.rich.input.RichSelectOneChoice;
+
 import org.apache.myfaces.trinidad.util.ComponentReference;
 
 public class Controller1Request extends ControllerRequest {
@@ -11,6 +13,7 @@ public class Controller1Request extends ControllerRequest {
     // Instead of RichInputText best practice is this...
     private ComponentReference firstName;
     private ComponentReference lastName;
+    private ComponentReference managerId;
 
     public Controller1Request() {
         super();
@@ -91,5 +94,22 @@ public class Controller1Request extends ControllerRequest {
         } else {
             return (RichInputText) this.lastName.getComponent();
         }
+    }
+
+    public void setManagerId(RichSelectOneChoice mi) {
+        this.managerId = ComponentReference.newUIComponentReference(mi);
+    }
+
+    public RichSelectOneChoice getManagerId() {
+        if (this.managerId == null) {
+            return null;
+        } else {
+            return (RichSelectOneChoice) this.managerId.getComponent();
+        }
+    }
+
+    public void onChangeManagerId(ValueChangeEvent vce) {
+        System.out.println("onChangeManagerId");
+        System.out.println(vce.getOldValue() + " -> " + vce.getNewValue());
     }
 }
