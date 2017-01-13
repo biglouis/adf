@@ -15,7 +15,9 @@
   PageIterMode="Full"
   RowClass="poc1.model.vo.EmployeesVORowImpl"
   ComponentClass="poc1.model.vo.EmployeesVOImpl"
-  DefClass="poc1.model.extensions.MyViewDefImpl">
+  DefClass="poc1.model.extensions.MyViewDefImpl"
+  FetchSize="25"
+  FetchMode="FETCH_AS_NEEDED">
   <DesignTime>
     <Attr Name="_codeGenFlag2" Value="Coll|VarAccess"/>
     <Attr Name="_isCodegen" Value="true"/>
