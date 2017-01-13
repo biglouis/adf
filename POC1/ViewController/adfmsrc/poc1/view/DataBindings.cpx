@@ -8,9 +8,11 @@
   </definitionFactories>
   <pageMap>
     <page path="/pages/Home.jsf" usageId="poc1_pagedefs_HomePageDef"/>
+    <page path="/pages/View1.jsff" usageId="poc1_view_View1PageDef"/>
   </pageMap>
   <pageDefinitionUsages>
     <page id="poc1_pagedefs_HomePageDef" path="poc1.view.pagedefs.HomePageDef"/>
+    <page id="poc1_view_View1PageDef" path="pages.View1PageDef"/>
   </pageDefinitionUsages>
   <dataControlUsages>
     <BC4JDataControl id="MyAppModuleDataControl" Package="poc1.model.am"
