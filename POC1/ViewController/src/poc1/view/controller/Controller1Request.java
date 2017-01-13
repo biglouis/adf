@@ -4,8 +4,6 @@ import javax.faces.event.ValueChangeEvent;
 
 import oracle.adf.view.rich.component.rich.input.RichInputText;
 
-import oracle.adf.view.rich.context.AdfFacesContext;
-
 import org.apache.myfaces.trinidad.util.ComponentReference;
 
 public class Controller1Request extends ControllerRequest {
@@ -32,7 +30,7 @@ public class Controller1Request extends ControllerRequest {
         // Clear "lastname" if "firstname" is empty
         if (newValue.isEmpty()) {
             getLastName().setValue("");
-            AdfFacesContext.getCurrentInstance().addPartialTarget(getLastName());
+            addPartialTarget(getLastName());
         }
     }
 
@@ -51,7 +49,7 @@ public class Controller1Request extends ControllerRequest {
         // Clear "firstname" if "lastname" is empty
         if (newValue.isEmpty()) {
             getFirstName().setValue("");
-            AdfFacesContext.getCurrentInstance().addPartialTarget(getFirstName());
+            addPartialTarget(getFirstName());
         }
     }
 
