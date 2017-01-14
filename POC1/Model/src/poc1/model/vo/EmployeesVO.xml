@@ -163,8 +163,8 @@
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
   <ViewLinkAccessor
-    Name="DepartmentsVO"
-    ViewLink="poc1.model.links.DeptMgrFkLK"
+    Name="DepartmentsVOViewLinkAccessor"
+    ViewLink="poc1.model.links.DeptMgrLink"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
   <ViewLinkAccessor

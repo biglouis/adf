@@ -54,9 +54,9 @@
     TableName="DEPARTMENTS"/>
   <AccessorAttribute
     Name="Employees"
-    Association="poc1.model.assocs.DeptMgrFkAC"
-    AssociationEnd="poc1.model.assocs.DeptMgrFkAC.Employees"
-    AssociationOtherEnd="poc1.model.assocs.DeptMgrFkAC.Departments"
+    Association="poc1.model.assocs.DeptMgrAssoc"
+    AssociationEnd="poc1.model.assocs.DeptMgrAssoc.Employees"
+    AssociationOtherEnd="poc1.model.assocs.DeptMgrAssoc.Departments"
     Type="oracle.jbo.server.EntityImpl"
     IsUpdateable="true"/>
   <AccessorAttribute

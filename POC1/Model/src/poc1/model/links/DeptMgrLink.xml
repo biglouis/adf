@@ -3,30 +3,30 @@
 <!---->
 <ViewLink
   xmlns="http://xmlns.oracle.com/bc4j"
-  Name="DeptMgrFkLK"
+  Name="DeptMgrLink"
   Version="12.2.1.16.48"
   InheritPersonalization="merge"
-  EntityAssociation="poc1.model.assocs.DeptMgrFkAC">
+  EntityAssociation="poc1.model.assocs.DeptMgrAssoc">
   <ViewLinkDefEnd
-    Name="EmployeesView"
+    Name="EmployeesVOViewLinkAccessor"
     Cardinality="1"
     Source="true"
     Owner="poc1.model.vo.EmployeesVO">
     <DesignTime>
       <Attr Name="_isUpdateable" Value="true"/>
-      <Attr Name="_finderName" Value="EmployeesView"/>
+      <Attr Name="_finderName" Value="EmployeesVOViewLinkAccessorFinderName"/>
     </DesignTime>
     <AttrArray Name="Attributes">
       <Item Value="poc1.model.vo.EmployeesVO.EmployeeId"/>
     </AttrArray>
   </ViewLinkDefEnd>
   <ViewLinkDefEnd
-    Name="DepartmentsVO"
+    Name="DepartmentsVOViewLinkAccessor"
     Cardinality="-1"
     Owner="poc1.model.vo.DepartmentsVO">
     <DesignTime>
       <Attr Name="_isUpdateable" Value="true"/>
-      <Attr Name="_finderName" Value="DepartmentsVO"/>
+      <Attr Name="_finderName" Value="DepartmentsVOViewLinkAccessorFinderName"/>
     </DesignTime>
     <AttrArray Name="Attributes">
       <Item Value="poc1.model.vo.DepartmentsVO.ManagerId"/>
@@ -35,7 +35,7 @@
   <Properties>
     <SchemaBasedProperties>
       <LABEL
-        ResId="poc1.model.links.DeptMgrFkLK_LABEL"/>
+        ResId="poc1.model.links.DeptMgrLink_LABEL"/>
     </SchemaBasedProperties>
   </Properties>
   <ResourceBundle>
