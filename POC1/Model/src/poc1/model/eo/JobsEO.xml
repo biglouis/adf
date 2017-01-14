@@ -57,9 +57,9 @@
     TableName="JOBS"/>
   <AccessorAttribute
     Name="Employees"
-    Association="poc1.model.assocs.EmpJobFkAC"
-    AssociationEnd="poc1.model.assocs.EmpJobFkAC.Employees"
-    AssociationOtherEnd="poc1.model.assocs.EmpJobFkAC.Jobs"
+    Association="poc1.model.assocs.EmpJobAssoc"
+    AssociationEnd="poc1.model.assocs.EmpJobAssoc.Employees"
+    AssociationOtherEnd="poc1.model.assocs.EmpJobAssoc.Jobs"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
   <AccessorAttribute

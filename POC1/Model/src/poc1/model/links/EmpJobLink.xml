@@ -3,31 +3,31 @@
 <!---->
 <ViewLink
   xmlns="http://xmlns.oracle.com/bc4j"
-  Name="EmpJobFkLK"
+  Name="EmpJobLink"
   Version="12.2.1.16.48"
   InheritPersonalization="merge"
-  EntityAssociation="poc1.model.assocs.EmpJobFkAC">
+  EntityAssociation="poc1.model.assocs.EmpJobAssoc">
   <ViewLinkDefEnd
-    Name="JobsView"
+    Name="JobsVOViewLinkAccessor"
     Cardinality="1"
     Source="true"
     Owner="poc1.model.vo.JobsVO">
     <DesignTime>
       <Attr Name="_isUpdateable" Value="true"/>
       <Attr Name="_minCardinality" Value="1"/>
-      <Attr Name="_finderName" Value="JobsView"/>
+      <Attr Name="_finderName" Value="JobsVOViewLinkAccessorFinderName"/>
     </DesignTime>
     <AttrArray Name="Attributes">
       <Item Value="poc1.model.vo.JobsVO.JobId"/>
     </AttrArray>
   </ViewLinkDefEnd>
   <ViewLinkDefEnd
-    Name="EmployeesVO"
+    Name="EmployeesVOViewLinkAccessor"
     Cardinality="-1"
     Owner="poc1.model.vo.EmployeesVO">
     <DesignTime>
       <Attr Name="_isUpdateable" Value="true"/>
-      <Attr Name="_finderName" Value="EmployeesVO"/>
+      <Attr Name="_finderName" Value="EmployeesVOViewLinkAccessorFinderName"/>
     </DesignTime>
     <AttrArray Name="Attributes">
       <Item Value="poc1.model.vo.EmployeesVO.JobId"/>
@@ -36,7 +36,7 @@
   <Properties>
     <SchemaBasedProperties>
       <LABEL
-        ResId="poc1.model.links.EmpJobFkLK_LABEL"/>
+        ResId="poc1.model.links.EmpJobLink_LABEL"/>
     </SchemaBasedProperties>
   </Properties>
   <ResourceBundle>

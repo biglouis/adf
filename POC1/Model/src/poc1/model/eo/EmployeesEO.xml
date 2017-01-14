@@ -212,9 +212,9 @@
     IsUpdateable="true"/>
   <AccessorAttribute
     Name="Jobs"
-    Association="poc1.model.assocs.EmpJobFkAC"
-    AssociationEnd="poc1.model.assocs.EmpJobFkAC.Jobs"
-    AssociationOtherEnd="poc1.model.assocs.EmpJobFkAC.Employees"
+    Association="poc1.model.assocs.EmpJobAssoc"
+    AssociationEnd="poc1.model.assocs.EmpJobAssoc.Jobs"
+    AssociationOtherEnd="poc1.model.assocs.EmpJobAssoc.Employees"
     Type="oracle.jbo.server.EntityImpl"
     IsUpdateable="true"/>
   <AccessorAttribute

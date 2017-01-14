@@ -43,8 +43,8 @@
     EntityUsage="Jobs"
     AliasName="MAX_SALARY"/>
   <ViewLinkAccessor
-    Name="EmployeesVO"
-    ViewLink="poc1.model.links.EmpJobFkLK"
+    Name="EmployeesVOViewLinkAccessor"
+    ViewLink="poc1.model.links.EmpJobLink"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
   <ViewLinkAccessor
