@@ -48,8 +48,8 @@
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
   <ViewLinkAccessor
-    Name="JobHistoryVO"
-    ViewLink="poc1.model.links.JhistJobFkLK"
+    Name="JobHistoryVOViewLinkAccessor"
+    ViewLink="poc1.model.links.JhistJobLink"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
 </ViewObject>

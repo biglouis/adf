@@ -76,9 +76,9 @@
     IsUpdateable="true"/>
   <AccessorAttribute
     Name="Jobs"
-    Association="poc1.model.assocs.JhistJobFkAC"
-    AssociationEnd="poc1.model.assocs.JhistJobFkAC.Jobs"
-    AssociationOtherEnd="poc1.model.assocs.JhistJobFkAC.JobHistory"
+    Association="poc1.model.assocs.JhistJobAssoc"
+    AssociationEnd="poc1.model.assocs.JhistJobAssoc.Jobs"
+    AssociationOtherEnd="poc1.model.assocs.JhistJobAssoc.JobHistory"
     Type="oracle.jbo.server.EntityImpl"
     IsUpdateable="true"/>
   <Key

@@ -3,31 +3,31 @@
 <!---->
 <ViewLink
   xmlns="http://xmlns.oracle.com/bc4j"
-  Name="JhistJobFkLK"
+  Name="JhistJobLink"
   Version="12.2.1.16.48"
   InheritPersonalization="merge"
-  EntityAssociation="poc1.model.assocs.JhistJobFkAC">
+  EntityAssociation="poc1.model.assocs.JhistJobAssoc">
   <ViewLinkDefEnd
-    Name="JobsView"
+    Name="JobsVOViewLinkAccessor"
     Cardinality="1"
     Source="true"
     Owner="poc1.model.vo.JobsVO">
     <DesignTime>
       <Attr Name="_isUpdateable" Value="true"/>
       <Attr Name="_minCardinality" Value="1"/>
-      <Attr Name="_finderName" Value="JobsView"/>
+      <Attr Name="_finderName" Value="JobsVOViewLinkAccessorFinderName"/>
     </DesignTime>
     <AttrArray Name="Attributes">
       <Item Value="poc1.model.vo.JobsVO.JobId"/>
     </AttrArray>
   </ViewLinkDefEnd>
   <ViewLinkDefEnd
-    Name="JobHistoryVO"
+    Name="JobHistoryVOViewLinkAccessor"
     Cardinality="-1"
     Owner="poc1.model.vo.JobHistoryVO">
     <DesignTime>
       <Attr Name="_isUpdateable" Value="true"/>
-      <Attr Name="_finderName" Value="JobHistoryVO"/>
+      <Attr Name="_finderName" Value="JobHistoryVOViewLinkAccessorFinderName"/>
     </DesignTime>
     <AttrArray Name="Attributes">
       <Item Value="poc1.model.vo.JobHistoryVO.JobId"/>
