@@ -12,11 +12,11 @@
   BindingStyle="OracleName"
   CustomQuery="false"
   SelectAllAttributes="false"
-  PageIterMode="Full"
+  PageIterMode="Partial"
   RowClass="poc1.model.vo.EmployeesVORowImpl"
   ComponentClass="poc1.model.vo.EmployeesVOImpl"
   DefClass="poc1.model.extensions.MyViewDefImpl"
-  FetchSize="25"
+  FetchSize="10"
   FetchMode="FETCH_AS_NEEDED">
   <DesignTime>
     <Attr Name="_codeGenFlag2" Value="Coll|VarAccess"/>

@@ -14,8 +14,6 @@
                            disabled="#{!bindings.Next.enabled}" partialSubmit="true" id="b4"/>
                 <af:button actionListener="#{bindings.Last.execute}" text="#{bundle.LABEL_LAST}"
                            disabled="#{!bindings.Last.enabled}" partialSubmit="true" id="b5"/>
-                <af:button text="#{bundle.LABEL_ROLLBACK}" id="b1" action="goRollback"/>
-                <af:button text="#{bundle.LABEL_COMMIT}" id="b7" action="goCommit"/>
             </af:toolbar>
         </f:facet>
         <af:panelFormLayout id="pfl1" maxColumns="2" rows="4">
@@ -92,6 +90,12 @@
                 <f:selectItems value="#{bindings.DepartmentId.items}" id="si2"/>
                 <f:validator binding="#{bindings.DepartmentId.validator}"/>
             </af:selectOneChoice>
+            <f:facet name="footer">
+                <af:toolbar id="t2">
+                    <af:button text="#{bundle.LABEL_COMMIT}" id="b7" action="goCommit"/>
+                    <af:button text="#{bundle.LABEL_ROLLBACK}" id="b1" action="goRollback" immediate="true"/>
+                </af:toolbar>
+            </f:facet>
         </af:panelFormLayout>
     </af:showDetailHeader>
 </ui:composition>
