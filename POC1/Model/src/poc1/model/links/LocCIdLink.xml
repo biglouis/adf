@@ -3,30 +3,30 @@
 <!---->
 <ViewLink
   xmlns="http://xmlns.oracle.com/bc4j"
-  Name="LocCIdFkLK"
+  Name="LocCIdLink"
   Version="12.2.1.16.48"
   InheritPersonalization="merge"
-  EntityAssociation="poc1.model.assocs.LocCIdFkAC">
+  EntityAssociation="poc1.model.assocs.LocCIdAssoc">
   <ViewLinkDefEnd
-    Name="CountriesVO"
+    Name="CountriesVOViewLinkAccessor"
     Cardinality="1"
     Source="true"
     Owner="poc1.model.vo.CountriesVO">
     <DesignTime>
       <Attr Name="_isUpdateable" Value="true"/>
-      <Attr Name="_finderName" Value="CountriesView"/>
+      <Attr Name="_finderName" Value="CountriesVOViewLinkAccessorFinderName"/>
     </DesignTime>
     <AttrArray Name="Attributes">
       <Item Value="poc1.model.vo.CountriesVO.CountryId"/>
     </AttrArray>
   </ViewLinkDefEnd>
   <ViewLinkDefEnd
-    Name="LocationsVO"
+    Name="LocationsVOViewLinkAccessor"
     Cardinality="-1"
     Owner="poc1.model.vo.LocationsVO">
     <DesignTime>
       <Attr Name="_isUpdateable" Value="true"/>
-      <Attr Name="_finderName" Value="LocationsVO"/>
+      <Attr Name="_finderName" Value="LocationsVOViewLinkAccessorFinderName"/>
     </DesignTime>
     <AttrArray Name="Attributes">
       <Item Value="poc1.model.vo.LocationsVO.CountryId"/>

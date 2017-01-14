@@ -47,9 +47,9 @@
     TableName="COUNTRIES"/>
   <AccessorAttribute
     Name="Locations"
-    Association="poc1.model.assocs.LocCIdFkAC"
-    AssociationEnd="poc1.model.assocs.LocCIdFkAC.Locations"
-    AssociationOtherEnd="poc1.model.assocs.LocCIdFkAC.Countries"
+    Association="poc1.model.assocs.LocCIdAssoc"
+    AssociationEnd="poc1.model.assocs.LocCIdAssoc.Locations"
+    AssociationOtherEnd="poc1.model.assocs.LocCIdAssoc.Countries"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
   <AccessorAttribute

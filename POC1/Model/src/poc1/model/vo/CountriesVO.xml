@@ -66,8 +66,8 @@
     </Properties>
   </ViewAttribute>
   <ViewLinkAccessor
-    Name="LocationsVO"
-    ViewLink="poc1.model.links.LocCIdFkLK"
+    Name="LocationsVOViewLinkAccessor"
+    ViewLink="poc1.model.links.LocCIdLink"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
 </ViewObject>

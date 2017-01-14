@@ -93,9 +93,9 @@
     IsUpdateable="false"/>
   <AccessorAttribute
     Name="Countries"
-    Association="poc1.model.assocs.LocCIdFkAC"
-    AssociationEnd="poc1.model.assocs.LocCIdFkAC.Countries"
-    AssociationOtherEnd="poc1.model.assocs.LocCIdFkAC.Locations"
+    Association="poc1.model.assocs.LocCIdAssoc"
+    AssociationEnd="poc1.model.assocs.LocCIdAssoc.Countries"
+    AssociationOtherEnd="poc1.model.assocs.LocCIdAssoc.Locations"
     Type="oracle.jbo.server.EntityImpl"
     IsUpdateable="true"/>
   <Key
