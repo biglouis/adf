@@ -3,30 +3,30 @@
 <!---->
 <ViewLink
   xmlns="http://xmlns.oracle.com/bc4j"
-  Name="CountrRegFkLK"
+  Name="CountrRegLink"
   Version="12.2.1.16.48"
   InheritPersonalization="merge"
-  EntityAssociation="poc1.model.assocs.CountrRegFkAC">
+  EntityAssociation="poc1.model.assocs.CountrRegAssoc">
   <ViewLinkDefEnd
-    Name="RegionsView"
+    Name="RegionsVOViewLinkAccessor"
     Cardinality="1"
     Source="true"
     Owner="poc1.model.vo.RegionsVO">
     <DesignTime>
       <Attr Name="_isUpdateable" Value="true"/>
-      <Attr Name="_finderName" Value="RegionsVO"/>
+      <Attr Name="_finderName" Value="RegionsVOViewLinkAccessorName"/>
     </DesignTime>
     <AttrArray Name="Attributes">
       <Item Value="poc1.model.vo.RegionsVO.RegionId"/>
     </AttrArray>
   </ViewLinkDefEnd>
   <ViewLinkDefEnd
-    Name="CountriesView"
+    Name="CountriesVOViewLinkAccessor"
     Cardinality="-1"
     Owner="poc1.model.vo.CountriesVO">
     <DesignTime>
       <Attr Name="_isUpdateable" Value="true"/>
-      <Attr Name="_finderName" Value="CountriesVO"/>
+      <Attr Name="_finderName" Value="CountriesVOViewLinkAccessorName"/>
     </DesignTime>
     <AttrArray Name="Attributes">
       <Item Value="poc1.model.vo.CountriesVO.RegionId"/>
@@ -35,7 +35,7 @@
   <Properties>
     <SchemaBasedProperties>
       <LABEL
-        ResId="poc1.model.links.CountrRegFkLK_LABEL"/>
+        ResId="poc1.model.links.CountrRegLink_LABEL"/>
     </SchemaBasedProperties>
   </Properties>
   <ResourceBundle>

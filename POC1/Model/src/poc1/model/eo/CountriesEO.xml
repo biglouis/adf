@@ -54,9 +54,9 @@
     IsUpdateable="false"/>
   <AccessorAttribute
     Name="Regions"
-    Association="poc1.model.assocs.CountrRegFkAC"
-    AssociationEnd="poc1.model.assocs.CountrRegFkAC.Regions"
-    AssociationOtherEnd="poc1.model.assocs.CountrRegFkAC.Countries"
+    Association="poc1.model.assocs.CountrRegAssoc"
+    AssociationEnd="poc1.model.assocs.CountrRegAssoc.Regions"
+    AssociationOtherEnd="poc1.model.assocs.CountrRegAssoc.Countries"
     Type="oracle.jbo.server.EntityImpl"
     IsUpdateable="true"/>
   <Key

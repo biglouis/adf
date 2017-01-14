@@ -12,7 +12,10 @@
   BindingStyle="OracleName"
   CustomQuery="false"
   SelectAllAttributes="false"
-  PageIterMode="Full">
+  PageIterMode="Full"
+  RowClass="poc1.model.extensions.MyViewRowImpl"
+  ComponentClass="poc1.model.extensions.MyViewObjectImpl"
+  DefClass="poc1.model.extensions.MyViewDefImpl">
   <EntityUsage
     Name="Regions"
     Entity="poc1.model.eo.RegionsEO"/>
@@ -30,8 +33,8 @@
     EntityUsage="Regions"
     AliasName="REGION_NAME"/>
   <ViewLinkAccessor
-    Name="CountriesView"
-    ViewLink="poc1.model.links.CountrRegFkLK"
+    Name="CountriesVOViewLinkAccessor"
+    ViewLink="poc1.model.links.CountrRegLink"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
 </ViewObject>

@@ -8,7 +8,7 @@
   InheritPersonalization="merge"
   EntityAssociation="poc1.model.assocs.LocCIdFkAC">
   <ViewLinkDefEnd
-    Name="CountriesView"
+    Name="CountriesVO"
     Cardinality="1"
     Source="true"
     Owner="poc1.model.vo.CountriesVO">

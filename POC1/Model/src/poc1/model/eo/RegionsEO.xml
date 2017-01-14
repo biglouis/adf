@@ -33,9 +33,9 @@
   </Attribute>
   <AccessorAttribute
     Name="Countries"
-    Association="poc1.model.assocs.CountrRegFkAC"
-    AssociationEnd="poc1.model.assocs.CountrRegFkAC.Countries"
-    AssociationOtherEnd="poc1.model.assocs.CountrRegFkAC.Regions"
+    Association="poc1.model.assocs.CountrRegAssoc"
+    AssociationEnd="poc1.model.assocs.CountrRegAssoc.Countries"
+    AssociationOtherEnd="poc1.model.assocs.CountrRegAssoc.Regions"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
   <Key
