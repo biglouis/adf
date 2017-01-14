@@ -3,30 +3,30 @@
 <!---->
 <ViewLink
   xmlns="http://xmlns.oracle.com/bc4j"
-  Name="DeptLocFkLK"
+  Name="DeptLocLink"
   Version="12.2.1.16.48"
   InheritPersonalization="merge"
-  EntityAssociation="poc1.model.assocs.DeptLocFkAC">
+  EntityAssociation="poc1.model.assocs.DeptLocAssoc">
   <ViewLinkDefEnd
-    Name="LocationsView"
+    Name="LocationsVOViewLinkAccessor"
     Cardinality="1"
     Source="true"
     Owner="poc1.model.vo.LocationsVO">
     <DesignTime>
       <Attr Name="_isUpdateable" Value="true"/>
-      <Attr Name="_finderName" Value="LocationsView"/>
+      <Attr Name="_finderName" Value="LocationsVOViewLinkAccessorFinderName"/>
     </DesignTime>
     <AttrArray Name="Attributes">
       <Item Value="poc1.model.vo.LocationsVO.LocationId"/>
     </AttrArray>
   </ViewLinkDefEnd>
   <ViewLinkDefEnd
-    Name="DepartmentsView"
+    Name="DepartmentsVOViewLinkAccessor"
     Cardinality="-1"
     Owner="poc1.model.vo.DepartmentsVO">
     <DesignTime>
       <Attr Name="_isUpdateable" Value="true"/>
-      <Attr Name="_finderName" Value="DepartmentsView"/>
+      <Attr Name="_finderName" Value="DepartmentsVOViewLinkAccessorFinderName"/>
     </DesignTime>
     <AttrArray Name="Attributes">
       <Item Value="poc1.model.vo.DepartmentsVO.LocationId"/>
@@ -35,7 +35,7 @@
   <Properties>
     <SchemaBasedProperties>
       <LABEL
-        ResId="poc1.model.links.DeptLocFkLK_LABEL"/>
+        ResId="poc1.model.links.DeptLocLink_LABEL"/>
     </SchemaBasedProperties>
   </Properties>
   <ResourceBundle>

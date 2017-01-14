@@ -86,9 +86,9 @@
   </Attribute>
   <AccessorAttribute
     Name="Departments"
-    Association="poc1.model.assocs.DeptLocFkAC"
-    AssociationEnd="poc1.model.assocs.DeptLocFkAC.Departments"
-    AssociationOtherEnd="poc1.model.assocs.DeptLocFkAC.Locations"
+    Association="poc1.model.assocs.DeptLocAssoc"
+    AssociationEnd="poc1.model.assocs.DeptLocAssoc.Departments"
+    AssociationOtherEnd="poc1.model.assocs.DeptLocAssoc.Locations"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
   <AccessorAttribute

@@ -75,9 +75,9 @@
     IsUpdateable="false"/>
   <AccessorAttribute
     Name="Locations"
-    Association="poc1.model.assocs.DeptLocFkAC"
-    AssociationEnd="poc1.model.assocs.DeptLocFkAC.Locations"
-    AssociationOtherEnd="poc1.model.assocs.DeptLocFkAC.Departments"
+    Association="poc1.model.assocs.DeptLocAssoc"
+    AssociationEnd="poc1.model.assocs.DeptLocAssoc.Locations"
+    AssociationOtherEnd="poc1.model.assocs.DeptLocAssoc.Departments"
     Type="oracle.jbo.server.EntityImpl"
     IsUpdateable="true"/>
   <Key
