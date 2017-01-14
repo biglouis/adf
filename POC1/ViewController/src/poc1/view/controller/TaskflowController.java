@@ -3,7 +3,7 @@ package poc1.view.controller;
 import java.io.Serializable;
 
 public class TaskflowController implements Serializable {
-    @SuppressWarnings("compatibility:-4416689803438192947")
+    @SuppressWarnings("compatibility:-4991837154228793347")
     private static final long serialVersionUID = 4269527405860744230L;
 
     private String parameter;

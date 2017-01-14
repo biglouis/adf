@@ -34,11 +34,21 @@
         <commit/>
       </outcome>
     </task-flow-return>
+    <task-flow-return id="Rollback">
+      <outcome>
+        <name>Rollback</name>
+        <rollback/>
+      </outcome>
+    </task-flow-return>
     <control-flow-rule id="__1">
       <from-activity-id>View2</from-activity-id>
       <control-flow-case id="__2">
-        <from-outcome>callReturn</from-outcome>
+        <from-outcome>goCommit</from-outcome>
         <to-activity-id>Commit</to-activity-id>
+      </control-flow-case>
+      <control-flow-case id="__5">
+        <from-outcome>goRollback</from-outcome>
+        <to-activity-id>Rollback</to-activity-id>
       </control-flow-case>
     </control-flow-rule>
     <use-page-fragments/>

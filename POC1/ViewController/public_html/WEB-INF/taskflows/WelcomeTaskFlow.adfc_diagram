@@ -66,7 +66,7 @@
       from="View2"
       to="TaskFlowCall3">
       <property
-         name="fromOutcome">callView1</property>
+         name="fromOutcome">goView1</property>
       <property
          name="sdm:polyPoints">B56,278.3125,153.30078,361.6621,212.4336,T50</property>
    </ControlFlowCase>
@@ -76,7 +76,7 @@
       from="View2"
       to="TaskFlowCall4">
       <property
-         name="fromOutcome">callView2</property>
+         name="fromOutcome">goView2</property>
       <property
          name="sdm:polyPoints">B44,271.3125,153.30078,187.96289,212.4336,T50</property>
    </ControlFlowCase>

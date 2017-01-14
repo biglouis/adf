@@ -2,20 +2,20 @@
 <ui:composition xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
                 xmlns:f="http://java.sun.com/jsf/core" xmlns:c="http://java.sun.com/jsp/jstl/core">
     <c:set var="bundle" value="#{adfBundle['poc1.view.bundles.ViewControllerBundle']}"/>
-    <af:showDetailHeader text="#{bundle.VIEW_1}: #{pageFlowScope.taskflowController.parameter}" disclosed="true"
+    <af:showDetailHeader text="#{bundle.LABEL_VIEW_1}: #{pageFlowScope.taskflowController.parameter}" disclosed="true"
                          id="sdh1">
         <f:facet name="toolbar">
             <af:toolbar id="t1">
-                <af:button actionListener="#{bindings.First.execute}" text="#{bundle.First}"
+                <af:button actionListener="#{bindings.First.execute}" text="#{bundle.LABEL_FIRST}"
                            disabled="#{!bindings.First.enabled}" partialSubmit="true" id="b2"/>
-                <af:button actionListener="#{bindings.Previous.execute}" text="#{bundle.Previous}"
+                <af:button actionListener="#{bindings.Previous.execute}" text="#{bundle.LABEL_PREV}"
                            disabled="#{!bindings.Previous.enabled}" partialSubmit="true" id="b3"/>
-                <af:button actionListener="#{bindings.Next.execute}" text="#{bundle.Next}"
+                <af:button actionListener="#{bindings.Next.execute}" text="#{bundle.LABEL_NEXT}"
                            disabled="#{!bindings.Next.enabled}" partialSubmit="true" id="b4"/>
-                <af:button actionListener="#{bindings.Last.execute}" text="#{bundle.Last}"
+                <af:button actionListener="#{bindings.Last.execute}" text="#{bundle.LABEL_LAST}"
                            disabled="#{!bindings.Last.enabled}" partialSubmit="true" id="b5"/>
-                <af:button text="#{bundle.ABBRECHEN}" id="b1" action="goRollback"/>
-                <af:button text="#{bundle.SPEICHERN}" id="b7" action="goCommit"/>
+                <af:button text="#{bundle.LABEL_ROLLBACK}" id="b1" action="goRollback"/>
+                <af:button text="#{bundle.LABEL_COMMIT}" id="b7" action="goCommit"/>
             </af:toolbar>
         </f:facet>
         <af:panelFormLayout id="pfl1" maxColumns="2" rows="4">
