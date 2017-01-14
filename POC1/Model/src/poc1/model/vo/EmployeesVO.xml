@@ -23,16 +23,16 @@
     <Attr Name="_isCodegen" Value="true"/>
   </DesignTime>
   <ViewAccessor
-    Name="DepartmentsVO1"
+    Name="DepartmentsVOViewAccessor"
     ViewObjectName="poc1.model.vo.DepartmentsVO"
     RowLevelBinds="true"/>
   <ViewAccessor
-    Name="EmployeesVO1"
+    Name="EmployeesVOViewAccessor"
     ViewObjectName="poc1.model.vo.EmployeesVO"
     RowLevelBinds="true"/>
   <ListBinding
     Name="LOV_DepartmentId"
-    ListVOName="DepartmentsVO1"
+    ListVOName="DepartmentsVOViewAccessor"
     NullValueFlag="start"
     NullValueId="${adfBundle['oracle.javatools.resourcebundle.SystemBundle']['NULL_VALUE_RESID']}"
     MRUCount="0">
@@ -50,7 +50,7 @@
   </ListBinding>
   <ListBinding
     Name="LOV_ManagerId"
-    ListVOName="EmployeesVO1"
+    ListVOName="EmployeesVOViewAccessor"
     NullValueFlag="start"
     NullValueId="${adfBundle['oracle.javatools.resourcebundle.SystemBundle']['NULL_VALUE_RESID']}"
     MRUCount="0">
@@ -158,8 +158,8 @@
     </Properties>
   </ViewAttribute>
   <ViewLinkAccessor
-    Name="EmployeesVO"
-    ViewLink="poc1.model.links.EmpManagerFkLK"
+    Name="EmployeesVOViewLinkAccessor"
+    ViewLink="poc1.model.links.EmpManagerLink"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
   <ViewLinkAccessor

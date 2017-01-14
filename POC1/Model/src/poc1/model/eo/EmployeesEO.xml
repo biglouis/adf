@@ -184,16 +184,16 @@
   </Attribute>
   <AccessorAttribute
     Name="Employees"
-    Association="poc1.model.assocs.EmpManagerFkAC"
-    AssociationEnd="poc1.model.assocs.EmpManagerFkAC.Employees"
-    AssociationOtherEnd="poc1.model.assocs.EmpManagerFkAC.ManagerIdEmployees"
+    Association="poc1.model.assocs.EmpManagerAssoc"
+    AssociationEnd="poc1.model.assocs.EmpManagerAssoc.Employees"
+    AssociationOtherEnd="poc1.model.assocs.EmpManagerAssoc.ManagerIdEmployees"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
   <AccessorAttribute
     Name="ManagerIdEmployees"
-    Association="poc1.model.assocs.EmpManagerFkAC"
-    AssociationEnd="poc1.model.assocs.EmpManagerFkAC.ManagerIdEmployees"
-    AssociationOtherEnd="poc1.model.assocs.EmpManagerFkAC.Employees"
+    Association="poc1.model.assocs.EmpManagerAssoc"
+    AssociationEnd="poc1.model.assocs.EmpManagerAssoc.ManagerIdEmployees"
+    AssociationOtherEnd="poc1.model.assocs.EmpManagerAssoc.Employees"
     Type="oracle.jbo.server.EntityImpl"
     IsUpdateable="true"/>
   <AccessorAttribute

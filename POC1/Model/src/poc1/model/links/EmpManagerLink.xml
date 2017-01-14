@@ -3,30 +3,30 @@
 <!---->
 <ViewLink
   xmlns="http://xmlns.oracle.com/bc4j"
-  Name="EmpManagerFkLK"
+  Name="EmpManagerLink"
   Version="12.2.1.16.48"
   InheritPersonalization="merge"
-  EntityAssociation="poc1.model.assocs.EmpManagerFkAC">
+  EntityAssociation="poc1.model.assocs.EmpManagerAssoc">
   <ViewLinkDefEnd
-    Name="ManagerIdEmployeesView"
+    Name="ManagerIdVOViewLinkAccessor"
     Cardinality="1"
     Source="true"
     Owner="poc1.model.vo.EmployeesVO">
     <DesignTime>
       <Attr Name="_isUpdateable" Value="true"/>
-      <Attr Name="_finderName" Value="ManagerIdEmployeesView"/>
+      <Attr Name="_finderName" Value="ManagerIdVOViewLinkAccessorFinderName"/>
     </DesignTime>
     <AttrArray Name="Attributes">
       <Item Value="poc1.model.vo.EmployeesVO.EmployeeId"/>
     </AttrArray>
   </ViewLinkDefEnd>
   <ViewLinkDefEnd
-    Name="EmployeesVO"
+    Name="EmployeesVOViewLinkAccessor"
     Cardinality="-1"
     Owner="poc1.model.vo.EmployeesVO">
     <DesignTime>
       <Attr Name="_isUpdateable" Value="true"/>
-      <Attr Name="_finderName" Value="EmployeesVO"/>
+      <Attr Name="_finderName" Value="EmployeesVOViewLinkAccessorFinderName"/>
     </DesignTime>
     <AttrArray Name="Attributes">
       <Item Value="poc1.model.vo.EmployeesVO.ManagerId"/>
