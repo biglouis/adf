@@ -219,9 +219,9 @@
     IsUpdateable="true"/>
   <AccessorAttribute
     Name="JobHistory"
-    Association="poc1.model.assocs.JhistEmpFkAC"
-    AssociationEnd="poc1.model.assocs.JhistEmpFkAC.JobHistory"
-    AssociationOtherEnd="poc1.model.assocs.JhistEmpFkAC.Employees"
+    Association="poc1.model.assocs.JhistEmpAssoc"
+    AssociationEnd="poc1.model.assocs.JhistEmpAssoc.JobHistory"
+    AssociationOtherEnd="poc1.model.assocs.JhistEmpAssoc.Employees"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
   <Key
