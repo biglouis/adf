@@ -12,7 +12,6 @@ public class EmployeesVOImpl extends MyViewObjectImpl {
      * This is the default constructor (do not remove).
      */
     public EmployeesVOImpl() {
-        System.out.println("EmployeesVOImpl");
     }
 }
 

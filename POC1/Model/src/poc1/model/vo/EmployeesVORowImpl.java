@@ -77,7 +77,6 @@ public class EmployeesVORowImpl extends MyViewRowImpl {
      * This is the default constructor (do not remove).
      */
     public EmployeesVORowImpl() {
-        System.out.println("EmployeesVORowImpl");
     }
 }
 

@@ -5,6 +5,6 @@ import oracle.jbo.server.ViewRowImpl;
 public class MyViewRowImpl extends ViewRowImpl {
     public MyViewRowImpl() {
         super();
-        System.out.println("MyViewRowImpl");
+        System.out.println(this.getClass().getName());
     }
 }

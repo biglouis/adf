@@ -5,6 +5,6 @@ import oracle.jbo.server.ProgrammaticEntityImpl;
 public class MyProgrammaticEntityImpl extends ProgrammaticEntityImpl {
     public MyProgrammaticEntityImpl() {
         super();
-        System.out.println("MyProgrammaticEntityImpl");
+        System.out.println(this.getClass().getName());
     }
 }

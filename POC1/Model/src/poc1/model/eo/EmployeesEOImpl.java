@@ -83,7 +83,6 @@ public class EmployeesEOImpl extends MyEntityImpl {
      * This is the default constructor (do not remove).
      */
     public EmployeesEOImpl() {
-        System.out.println("EmployeesEOImpl");
     }
 
     /**

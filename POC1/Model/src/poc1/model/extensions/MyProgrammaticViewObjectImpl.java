@@ -5,6 +5,6 @@ import oracle.jbo.server.ProgrammaticViewObjectImpl;
 public class MyProgrammaticViewObjectImpl extends ProgrammaticViewObjectImpl {
     public MyProgrammaticViewObjectImpl() {
         super();
-        System.out.println("MyProgrammaticViewObjectImpl");
+        System.out.println(this.getClass().getName());
     }
 }

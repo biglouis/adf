@@ -12,7 +12,6 @@ public class MyAppModuleDefImpl extends MyApplicationModuleDefImpl {
      * This is the default constructor (do not remove).
      */
     public MyAppModuleDefImpl() {
-        System.out.println("MyAppModuleDefImpl");
     }
 }
 
