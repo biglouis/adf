@@ -6,8 +6,14 @@
         <f:facet name="toolbar">
             <af:toolbar id="t1">
                 <af:button text="#{bundle.LABEL_ROLLBACK}" id="b1" action="goRollback"/>
-                <af:button text="#{bundle.LABEL_COMMIT}" id="b2" action="goCommit"/>
+                <af:button text="#{bundle.LABEL_COMMIT}" id="b2" action="goCommit">
+                    <af:clientListener method="Warn" type="action"/>
+                </af:button>
             </af:toolbar>
+            <!--Resource kommen eigentlich in das af:document, mit einem PanelForm drum geht es laut FN auch-->
+            <af:panelFormLayout id="pfl1">
+                <af:resource type="javascript" source="poc1/view/javascript/MyJavascript.js"/>
+            </af:panelFormLayout>
         </f:facet>
     </af:showDetailHeader>
 </ui:composition>
