@@ -7,12 +7,12 @@
     <dtfactory className="oracle.adf.controller.internal.dtrt.binding.BindingDTObjectFactory"/>
   </definitionFactories>
   <pageMap>
-    <page path="/pages/Home.jsf" usageId="poc1_pagedefs_HomePageDef"/>
-    <page path="/pages/View1.jsff" usageId="poc1_view_View1PageDef"/>
+    <page path="/pages/Home.jsf" usageId="poc1_view_pagedef_HomePageDef"/>
+    <page path="/poc1/view/fragments/View1.jsff" usageId="poc1_view_pagedef_View1PageDef"/>
   </pageMap>
   <pageDefinitionUsages>
-    <page id="poc1_pagedefs_HomePageDef" path="poc1.view.pagedefs.HomePageDef"/>
-    <page id="poc1_view_View1PageDef" path="pages.View1PageDef"/>
+    <page id="poc1_view_pagedef_HomePageDef" path="poc1.view.pagedef.HomePageDef"/>
+    <page id="poc1_view_pagedef_View1PageDef" path="poc1.view.pagedef.View1PageDef"/>
   </pageDefinitionUsages>
   <dataControlUsages>
     <BC4JDataControl id="MyAppModuleDataControl" Package="poc1.model.am"

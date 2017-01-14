@@ -6,7 +6,7 @@
       <shared/>
     </data-control-scope>
     <view id="Welcome">
-      <page>/pages/Welcome.jsff</page>
+      <page>/poc1/view/fragments/Welcome.jsff</page>
     </view>
     <task-flow-call id="View1TaskFlow">
       <task-flow-reference>
