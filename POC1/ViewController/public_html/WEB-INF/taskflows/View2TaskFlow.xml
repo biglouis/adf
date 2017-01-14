@@ -10,26 +10,21 @@
     </data-control-scope>
     <input-parameter-definition id="__6">
       <name>inputParameter</name>
-      <value>#{pageFlowScope.controllerPageflow.parameter}</value>
+      <value>#{pageFlowScope.taskflowController.parameter}</value>
       <class>java.lang.String</class>
     </input-parameter-definition>
     <managed-bean id="__3">
-      <managed-bean-name>controllerRequest</managed-bean-name>
-      <managed-bean-class>poc1.view.controller.Controller2Request</managed-bean-class>
+      <managed-bean-name>requestHandler</managed-bean-name>
+      <managed-bean-class>poc1.view.controller.RequestHandlerView2</managed-bean-class>
       <managed-bean-scope>request</managed-bean-scope>
     </managed-bean>
     <managed-bean id="__4">
-      <managed-bean-name>controllerPageflow</managed-bean-name>
-      <managed-bean-class>poc1.view.controller.Controller2Pageflow</managed-bean-class>
+      <managed-bean-name>taskflowController</managed-bean-name>
+      <managed-bean-class>poc1.view.controller.TaskflowControllerView2</managed-bean-class>
       <managed-bean-scope>pageFlow</managed-bean-scope>
     </managed-bean>
-    <managed-bean id="__5">
-      <managed-bean-name>controllerView</managed-bean-name>
-      <managed-bean-class>poc1.view.controller.Controller2View</managed-bean-class>
-      <managed-bean-scope>view</managed-bean-scope>
-    </managed-bean>
-    <initializer>#{pageFlowScope.controllerPageflow.initializer}</initializer>
-    <finalizer>#{pageFlowScope.controllerPageflow.finalizer}</finalizer>
+    <initializer>#{pageFlowScope.taskflowController.initializer}</initializer>
+    <finalizer>#{pageFlowScope.taskflowController.finalizer}</finalizer>
     <view id="View2">
       <page>/pages/View2.jsff</page>
     </view>

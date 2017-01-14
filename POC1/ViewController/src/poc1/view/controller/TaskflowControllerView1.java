@@ -1,10 +1,10 @@
 package poc1.view.controller;
 
-public class Controller1Pageflow extends ControllerPageflow{
+public class TaskflowControllerView1 extends TaskflowController{
     @SuppressWarnings("compatibility:8715558220132808506")
     private static final long serialVersionUID = 1L;
 
-    public Controller1Pageflow() {
+    public TaskflowControllerView1() {
         super();
     }
 }

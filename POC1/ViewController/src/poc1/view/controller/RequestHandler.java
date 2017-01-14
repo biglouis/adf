@@ -5,8 +5,8 @@ import javax.faces.event.ValueChangeEvent;
 
 import oracle.adf.view.rich.context.AdfFacesContext;
 
-public class ControllerRequest {
-    public ControllerRequest() {
+public class RequestHandler {
+    public RequestHandler() {
         super();
         System.out.println(this.getClass().getName());
     }

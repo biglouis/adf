@@ -8,14 +8,14 @@ import oracle.adf.view.rich.component.rich.input.RichSelectOneChoice;
 
 import org.apache.myfaces.trinidad.util.ComponentReference;
 
-public class Controller1Request extends ControllerRequest {
+public class RequestHandlerView1 extends RequestHandler {
 
     // Instead of RichInputText best practice is this...
     private ComponentReference firstName;
     private ComponentReference lastName;
     private ComponentReference managerId;
 
-    public Controller1Request() {
+    public RequestHandlerView1() {
         super();
     }
 

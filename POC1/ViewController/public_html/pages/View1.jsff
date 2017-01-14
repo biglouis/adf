@@ -2,7 +2,7 @@
 <ui:composition xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
                 xmlns:f="http://java.sun.com/jsf/core" xmlns:c="http://java.sun.com/jsp/jstl/core">
     <c:set var="bundle" value="#{adfBundle['poc1.view.bundles.ViewControllerBundle']}"/>
-    <af:showDetailHeader text="#{bundle.VIEW_1}: #{pageFlowScope.controllerPageflow.parameter}" disclosed="true"
+    <af:showDetailHeader text="#{bundle.VIEW_1}: #{pageFlowScope.taskflowController.parameter}" disclosed="true"
                          id="sdh1">
         <f:facet name="toolbar">
             <af:toolbar id="t1">
@@ -24,8 +24,8 @@
                           columns="#{bindings.FirstName.hints.displayWidth}"
                           maximumLength="#{bindings.FirstName.hints.precision}"
                           shortDesc="#{bindings.FirstName.hints.tooltip}" id="it1"
-                          valueChangeListener="#{controllerRequest.onChangeFirstName}" autoSubmit="true"
-                          binding="#{controllerRequest.firstName}">
+                          valueChangeListener="#{requestHandler.onChangeFirstName}" autoSubmit="true"
+                          binding="#{requestHandler.firstName}">
                 <f:validator binding="#{bindings.FirstName.validator}"/>
             </af:inputText>
             <af:inputText value="#{bindings.LastName.inputValue}" label="#{bindings.LastName.hints.label}"
@@ -33,8 +33,8 @@
                           columns="#{bindings.LastName.hints.displayWidth}"
                           maximumLength="#{bindings.LastName.hints.precision}"
                           shortDesc="#{bindings.LastName.hints.tooltip}" id="it2"
-                          valueChangeListener="#{controllerRequest.onChangeLastName}" autoSubmit="true"
-                          binding="#{controllerRequest.lastName}">
+                          valueChangeListener="#{requestHandler.onChangeLastName}" autoSubmit="true"
+                          binding="#{requestHandler.lastName}">
                 <f:validator binding="#{bindings.LastName.validator}"/>
             </af:inputText>
             <af:inputText value="#{bindings.Email.inputValue}" label="#{bindings.Email.hints.label}"
@@ -81,8 +81,8 @@
             <af:selectOneChoice value="#{bindings.ManagerId.inputValue}" label="#{bindings.ManagerId.label}"
                                 required="#{bindings.ManagerId.hints.mandatory}"
                                 shortDesc="#{bindings.ManagerId.hints.tooltip}" id="soc1"
-                                binding="#{controllerRequest.managerId}"
-                                valueChangeListener="#{controllerRequest.onChangeManagerId}" autoSubmit="true">
+                                binding="#{requestHandler.managerId}"
+                                valueChangeListener="#{requestHandler.onChangeManagerId}" autoSubmit="true">
                 <f:selectItems value="#{bindings.ManagerId.items}" id="si1"/>
                 <f:validator binding="#{bindings.ManagerId.validator}"/>
             </af:selectOneChoice>
