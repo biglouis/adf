@@ -62,9 +62,9 @@
     TableName="JOB_HISTORY"/>
   <AccessorAttribute
     Name="Departments"
-    Association="poc1.model.assocs.JhistDeptFkAC"
-    AssociationEnd="poc1.model.assocs.JhistDeptFkAC.Departments"
-    AssociationOtherEnd="poc1.model.assocs.JhistDeptFkAC.JobHistory"
+    Association="poc1.model.assocs.JhistDeptAssoc"
+    AssociationEnd="poc1.model.assocs.JhistDeptAssoc.Departments"
+    AssociationOtherEnd="poc1.model.assocs.JhistDeptAssoc.JobHistory"
     Type="oracle.jbo.server.EntityImpl"
     IsUpdateable="true"/>
   <AccessorAttribute
