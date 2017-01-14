@@ -3,7 +3,7 @@
 <!---->
 <Association
   xmlns="http://xmlns.oracle.com/bc4j"
-  Name="EmpDeptFkAC"
+  Name="EmpDeptAssoc"
   Version="12.2.1.16.48"
   InheritPersonalization="merge">
   <DesignTime>

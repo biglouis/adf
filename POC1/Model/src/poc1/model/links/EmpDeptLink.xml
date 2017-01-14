@@ -3,10 +3,10 @@
 <!---->
 <ViewLink
   xmlns="http://xmlns.oracle.com/bc4j"
-  Name="EmpDeptFkLK"
+  Name="EmpDeptLink"
   Version="12.2.1.16.48"
   InheritPersonalization="merge"
-  EntityAssociation="poc1.model.assocs.EmpDeptFkAC">
+  EntityAssociation="poc1.model.assocs.EmpDeptAssoc">
   <ViewLinkDefEnd
     Name="DepartmentsView1_1"
     Cardinality="1"
@@ -21,12 +21,12 @@
     </AttrArray>
   </ViewLinkDefEnd>
   <ViewLinkDefEnd
-    Name="EmployeesView"
+    Name="EmployeesVOViewLinkAccessor"
     Cardinality="-1"
     Owner="poc1.model.vo.EmployeesVO">
     <DesignTime>
       <Attr Name="_isUpdateable" Value="true"/>
-      <Attr Name="_finderName" Value="EmployeesView"/>
+      <Attr Name="_finderName" Value="EmployeesVOViewLinkAccessorFinderName"/>
     </DesignTime>
     <AttrArray Name="Attributes">
       <Item Value="poc1.model.vo.EmployeesVO.DepartmentId"/>
@@ -35,7 +35,7 @@
   <Properties>
     <SchemaBasedProperties>
       <LABEL
-        ResId="poc1.model.links.EmpDeptFkLK_LABEL"/>
+        ResId="poc1.model.links.EmpDeptLink_LABEL"/>
     </SchemaBasedProperties>
   </Properties>
   <ResourceBundle>

@@ -43,8 +43,8 @@
     EntityUsage="Departments"
     AliasName="LOCATION_ID"/>
   <ViewLinkAccessor
-    Name="EmployeesView"
-    ViewLink="poc1.model.links.EmpDeptFkLK"
+    Name="EmployeesVOViewLinkAccessor"
+    ViewLink="poc1.model.links.EmpDeptLink"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>
   <ViewLinkAccessor
