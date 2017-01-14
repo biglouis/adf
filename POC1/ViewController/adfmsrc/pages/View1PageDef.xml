@@ -3,56 +3,56 @@
   <parameters/>
   <executables>
     <variableIterator id="variables"/>
-    <iterator Binds="EmployeesVO1" RangeSize="25" DataControl="MyAppModuleDataControl" id="EmployeesVO1Iterator"/>
+    <iterator Binds="EmployeesVOViewUsage" RangeSize="25" DataControl="MyAppModuleDataControl" id="EmployeesVOViewUsageIterator"/>
   </executables>
   <bindings>
-    <attributeValues IterBinding="EmployeesVO1Iterator" id="FirstName">
+    <attributeValues IterBinding="EmployeesVOViewUsageIterator" id="FirstName">
       <AttrNames>
         <Item Value="FirstName"/>
       </AttrNames>
     </attributeValues>
-    <attributeValues IterBinding="EmployeesVO1Iterator" id="LastName">
+    <attributeValues IterBinding="EmployeesVOViewUsageIterator" id="LastName">
       <AttrNames>
         <Item Value="LastName"/>
       </AttrNames>
     </attributeValues>
-    <attributeValues IterBinding="EmployeesVO1Iterator" id="Email">
+    <attributeValues IterBinding="EmployeesVOViewUsageIterator" id="Email">
       <AttrNames>
         <Item Value="Email"/>
       </AttrNames>
     </attributeValues>
-    <attributeValues IterBinding="EmployeesVO1Iterator" id="PhoneNumber">
+    <attributeValues IterBinding="EmployeesVOViewUsageIterator" id="PhoneNumber">
       <AttrNames>
         <Item Value="PhoneNumber"/>
       </AttrNames>
     </attributeValues>
-    <attributeValues IterBinding="EmployeesVO1Iterator" id="HireDate">
+    <attributeValues IterBinding="EmployeesVOViewUsageIterator" id="HireDate">
       <AttrNames>
         <Item Value="HireDate"/>
       </AttrNames>
     </attributeValues>
-    <attributeValues IterBinding="EmployeesVO1Iterator" id="JobId">
+    <attributeValues IterBinding="EmployeesVOViewUsageIterator" id="JobId">
       <AttrNames>
         <Item Value="JobId"/>
       </AttrNames>
     </attributeValues>
-    <attributeValues IterBinding="EmployeesVO1Iterator" id="Salary">
+    <attributeValues IterBinding="EmployeesVOViewUsageIterator" id="Salary">
       <AttrNames>
         <Item Value="Salary"/>
       </AttrNames>
     </attributeValues>
-    <attributeValues IterBinding="EmployeesVO1Iterator" id="CommissionPct">
+    <attributeValues IterBinding="EmployeesVOViewUsageIterator" id="CommissionPct">
       <AttrNames>
         <Item Value="CommissionPct"/>
       </AttrNames>
     </attributeValues>
-    <list IterBinding="EmployeesVO1Iterator" StaticList="false" Uses="LOV_ManagerId" id="ManagerId"
+    <list IterBinding="EmployeesVOViewUsageIterator" StaticList="false" Uses="LOV_ManagerId" id="ManagerId"
           DTSupportsMRU="false" SelectItemValueMode="ListObject"/>
-    <list IterBinding="EmployeesVO1Iterator" StaticList="false" Uses="LOV_DepartmentId" id="DepartmentId"
+    <list IterBinding="EmployeesVOViewUsageIterator" StaticList="false" Uses="LOV_DepartmentId" id="DepartmentId"
           DTSupportsMRU="false" SelectItemValueMode="ListObject"/>
-    <action IterBinding="EmployeesVO1Iterator" id="First" RequiresUpdateModel="true" Action="first"/>
-    <action IterBinding="EmployeesVO1Iterator" id="Previous" RequiresUpdateModel="true" Action="previous"/>
-    <action IterBinding="EmployeesVO1Iterator" id="Next" RequiresUpdateModel="true" Action="next"/>
-    <action IterBinding="EmployeesVO1Iterator" id="Last" RequiresUpdateModel="true" Action="last"/>
+    <action IterBinding="EmployeesVOViewUsageIterator" id="First" RequiresUpdateModel="true" Action="first"/>
+    <action IterBinding="EmployeesVOViewUsageIterator" id="Previous" RequiresUpdateModel="true" Action="previous"/>
+    <action IterBinding="EmployeesVOViewUsageIterator" id="Next" RequiresUpdateModel="true" Action="next"/>
+    <action IterBinding="EmployeesVOViewUsageIterator" id="Last" RequiresUpdateModel="true" Action="last"/>
   </bindings>
 </pageDefinition>

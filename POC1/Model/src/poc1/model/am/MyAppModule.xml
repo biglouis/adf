@@ -20,10 +20,10 @@
     </SchemaBasedProperties>
   </Properties>
   <ViewUsage
-    Name="CountriesVO1"
+    Name="CountriesVOViewUsage"
     ViewObjectName="poc1.model.vo.CountriesVO"/>
   <ViewUsage
-    Name="EmployeesVO1"
+    Name="EmployeesVOViewUsage"
     ViewObjectName="poc1.model.vo.EmployeesVO"/>
   <ResourceBundle>
     <PropertiesBundle
