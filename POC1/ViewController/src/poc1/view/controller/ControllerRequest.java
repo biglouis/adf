@@ -8,7 +8,7 @@ import oracle.adf.view.rich.context.AdfFacesContext;
 public class ControllerRequest {
     public ControllerRequest() {
         super();
-        System.out.println("ControllerRequest");
+        System.out.println(this.getClass().getName());
     }
 
     /**

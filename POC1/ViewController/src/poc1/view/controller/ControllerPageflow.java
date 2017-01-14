@@ -10,7 +10,7 @@ public class ControllerPageflow implements Serializable {
 
     public ControllerPageflow() {
         super();
-        System.out.println("ControllerPageflow");
+        System.out.println(this.getClass().getName());
     }
 
     public final void initializer() {

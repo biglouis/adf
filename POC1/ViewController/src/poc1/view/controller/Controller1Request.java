@@ -17,7 +17,6 @@ public class Controller1Request extends ControllerRequest {
 
     public Controller1Request() {
         super();
-        System.out.println("Controller1Request");
     }
 
     /**
@@ -25,8 +24,7 @@ public class Controller1Request extends ControllerRequest {
      * @param vce
      */
     public void onChangeFirstName(ValueChangeEvent vce) {
-        System.out.println("onChangeFirstName");
-        System.out.println(vce.getOldValue() + " -> " + vce.getNewValue());
+        System.out.println("onChangeFirstName: " + vce.getOldValue() + " -> " + vce.getNewValue());
 
         String newValue = (String) vce.getNewValue();
 
@@ -42,10 +40,9 @@ public class Controller1Request extends ControllerRequest {
      * @param vce
      */
     public void onChangeLastName(ValueChangeEvent vce) {
-        
+
         // This does not work when clearing lastname because it is required? TODO
-        System.out.println("onChangeLastName");
-        System.out.println(vce.getOldValue() + " -> " + vce.getNewValue());
+        System.out.println("onChangeLastName: " + vce.getOldValue() + " -> " + vce.getNewValue());
 
         String newValue = (String) vce.getNewValue();
 
@@ -77,7 +74,7 @@ public class Controller1Request extends ControllerRequest {
     }
 
     /**
-     * Component sette for "lastname"
+     * Component setter for "lastname"
      * @param ln
      */
     public void setLastName(RichInputText ln) {
@@ -96,10 +93,18 @@ public class Controller1Request extends ControllerRequest {
         }
     }
 
+    /**
+     * Component setter for "managerId"
+     * @param mi
+     */
     public void setManagerId(RichSelectOneChoice mi) {
         this.managerId = ComponentReference.newUIComponentReference(mi);
     }
 
+    /**
+     * Component getter for "managerId"
+     * @return
+     */
     public RichSelectOneChoice getManagerId() {
         if (this.managerId == null) {
             return null;
@@ -108,8 +113,11 @@ public class Controller1Request extends ControllerRequest {
         }
     }
 
+    /**
+     * Listener for "managerId" component
+     * @param vce
+     */
     public void onChangeManagerId(ValueChangeEvent vce) {
-        System.out.println("onChangeManagerId");
-        System.out.println(vce.getOldValue() + " -> " + vce.getNewValue());
+        System.out.println("onChangeManagerId: " + vce.getOldValue() + " -> " + vce.getNewValue());
     }
 }
