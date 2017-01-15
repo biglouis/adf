@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.16.48" id="View2PageDef"
+                Package="poc1.view.fragments">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="CountriesVOViewUsage" RangeSize="25" DataControl="MyAppModuleDataControl"
+              id="CountriesVOViewUsageIterator"/>
+  </executables>
+  <bindings>
+    <tree IterBinding="CountriesVOViewUsageIterator" id="CountriesVOViewUsage">
+      <nodeDefinition DefName="poc1.model.vo.CountriesVO" Name="CountriesVOViewUsage0">
+        <AttrNames>
+          <Item Value="CountryName"/>
+          <Item Value="RegionId"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+  </bindings>
+</pageDefinition>

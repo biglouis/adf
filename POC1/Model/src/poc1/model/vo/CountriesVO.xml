@@ -12,7 +12,12 @@
   BindingStyle="OracleName"
   CustomQuery="false"
   SelectAllAttributes="false"
-  PageIterMode="Full">
+  PageIterMode="Partial"
+  RowClass="poc1.model.extensions.MyViewRowImpl"
+  ComponentClass="poc1.model.extensions.MyViewObjectImpl"
+  DefClass="poc1.model.extensions.MyViewDefImpl"
+  FetchSize="10"
+  FetchMode="FETCH_AS_NEEDED">
   <ViewAccessor
     Name="RegionsVOViewAccessor"
     ViewObjectName="poc1.model.vo.RegionsVO"

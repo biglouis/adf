@@ -9,7 +9,10 @@
   DBObjectType="table"
   DBObjectName="COUNTRIES"
   AliasName="Countries"
-  BindingStyle="OracleName">
+  BindingStyle="OracleName"
+  RowClass="poc1.model.extensions.MyEntityImpl"
+  DefClass="poc1.model.extensions.MyEntityDefImpl"
+  CollClass="poc1.model.extensions.MyEntityCache">
   <Attribute
     Name="CountryId"
     IsNotNull="true"
@@ -37,6 +40,12 @@
     <DesignTime>
       <Attr Name="_DisplaySize" Value="40"/>
     </DesignTime>
+    <Properties>
+      <SchemaBasedProperties>
+        <LABEL
+          ResId="LAND"/>
+      </SchemaBasedProperties>
+    </Properties>
   </Attribute>
   <Attribute
     Name="RegionId"
@@ -44,7 +53,14 @@
     SQLType="NUMERIC"
     Type="java.math.BigDecimal"
     ColumnType="NUMBER"
-    TableName="COUNTRIES"/>
+    TableName="COUNTRIES">
+    <Properties>
+      <SchemaBasedProperties>
+        <LABEL
+          ResId="KONTINENT"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </Attribute>
   <AccessorAttribute
     Name="Locations"
     Association="poc1.model.assocs.LocCIdAssoc"
@@ -89,4 +105,8 @@
       <Item Value="poc1.model.eo.CountriesEO.RegionId"/>
     </AttrArray>
   </Key>
+  <ResourceBundle>
+    <PropertiesBundle
+      PropertiesFile="poc1.model.bundles.ModelBundle"/>
+  </ResourceBundle>
 </Entity>

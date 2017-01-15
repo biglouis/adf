@@ -3,3 +3,10 @@
 @namespace af "http://xmlns.oracle.com/adf/faces/rich";
 @namespace dvt "http://xmlns.oracle.com/dss/adf/faces";
 
+af|showDetailHeader::title-text1 {
+    color: Green; 
+}
+
+af|showDetailHeader::title1 {
+    color: Green; 
+}
