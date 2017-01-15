@@ -1,0 +1,40 @@
+//Groovy Scripts for poc1.model.vo.DepartmentsVO
+
+package poc1.model.vo
+
+import oracle.jbo.script.annotation.TransientValueExpression;
+
+@TransientValueExpression(attributeName="NumberOfEmployees")
+def NumberOfEmployees_ExpressionScript_Expression()
+{
+EmployeesVOViewLinkAccessor.count("1")
+}
+
+
+@TransientValueExpression(attributeName="MinSalary")
+def MinSalary_ExpressionScript_Expression()
+{
+EmployeesVOViewLinkAccessor.min("Salary")
+}
+
+
+@TransientValueExpression(attributeName="MaxSalary")
+def MaxSalary_ExpressionScript_Expression()
+{
+EmployeesVOViewLinkAccessor.max("Salary")
+}
+
+
+@TransientValueExpression(attributeName="AvgSalary")
+def AvgSalary_ExpressionScript_Expression()
+{
+EmployeesVOViewLinkAccessor.avg("Salary")
+}
+
+
+@TransientValueExpression(attributeName="SumSalary")
+def SumSalary_ExpressionScript_Expression()
+{
+EmployeesVOViewLinkAccessor.sum("Salary")
+}
+

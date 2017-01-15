@@ -25,6 +25,9 @@
   <ViewUsage
     Name="EmployeesVOViewUsage"
     ViewObjectName="poc1.model.vo.EmployeesVO"/>
+  <ViewUsage
+    Name="DepartmentsVOViewUsage"
+    ViewObjectName="poc1.model.vo.DepartmentsVO"/>
   <ResourceBundle>
     <PropertiesBundle
       PropertiesFile="poc1.model.bundles.ModelBundle"/>

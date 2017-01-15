@@ -12,7 +12,10 @@
   BindingStyle="OracleName"
   CustomQuery="false"
   SelectAllAttributes="false"
-  PageIterMode="Full">
+  PageIterMode="Full"
+  RowClass="poc1.model.extensions.MyViewRowImpl"
+  ComponentClass="poc1.model.extensions.MyViewObjectImpl"
+  DefClass="poc1.model.extensions.MyViewDefImpl">
   <EntityUsage
     Name="Departments"
     Entity="poc1.model.eo.DepartmentsEO"/>
@@ -42,6 +45,81 @@
     EntityAttrName="LocationId"
     EntityUsage="Departments"
     AliasName="LOCATION_ID"/>
+  <ViewAttribute
+    Name="NumberOfEmployees"
+    IsUpdateable="false"
+    IsSelected="false"
+    IsPersistent="false"
+    PrecisionRule="true"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    AliasName="VIEW_ATTR"
+    SQLType="NUMERIC">
+    <TransientExpression
+      Name="ExpressionScript"
+      trustMode="untrusted"
+      CodeSourceName="DepartmentsVORow"/>
+  </ViewAttribute>
+  <ViewAttribute
+    Name="MinSalary"
+    IsUpdateable="false"
+    IsSelected="false"
+    IsPersistent="false"
+    PrecisionRule="true"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    AliasName="VIEW_ATTR"
+    SQLType="NUMERIC">
+    <TransientExpression
+      Name="ExpressionScript"
+      trustMode="untrusted"
+      CodeSourceName="DepartmentsVORow"/>
+  </ViewAttribute>
+  <ViewAttribute
+    Name="MaxSalary"
+    IsUpdateable="false"
+    IsSelected="false"
+    IsPersistent="false"
+    PrecisionRule="true"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    AliasName="VIEW_ATTR"
+    SQLType="NUMERIC">
+    <TransientExpression
+      Name="ExpressionScript"
+      trustMode="untrusted"
+      CodeSourceName="DepartmentsVORow"/>
+  </ViewAttribute>
+  <ViewAttribute
+    Name="AvgSalary"
+    IsUpdateable="false"
+    IsSelected="false"
+    IsPersistent="false"
+    PrecisionRule="true"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    AliasName="VIEW_ATTR"
+    SQLType="NUMERIC">
+    <TransientExpression
+      Name="ExpressionScript"
+      trustMode="untrusted"
+      CodeSourceName="DepartmentsVORow"/>
+  </ViewAttribute>
+  <ViewAttribute
+    Name="SumSalary"
+    IsUpdateable="false"
+    IsSelected="false"
+    IsPersistent="false"
+    PrecisionRule="true"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    AliasName="VIEW_ATTR"
+    SQLType="NUMERIC">
+    <TransientExpression
+      Name="ExpressionScript"
+      trustMode="untrusted"
+      CodeSourceName="DepartmentsVORow"/>
+  </ViewAttribute>
   <ViewLinkAccessor
     Name="EmployeesVOViewLinkAccessor"
     ViewLink="poc1.model.links.EmpDeptLink"

@@ -31,5 +31,29 @@ public class MyAppModuleImpl extends MyApplicationModuleImpl {
     public EmployeesVOImpl getEmployeesVO1() {
         return (EmployeesVOImpl) findViewObject("EmployeesVO1");
     }
+
+    /**
+     * Container's getter for CountriesVOViewUsage.
+     * @return CountriesVOViewUsage
+     */
+    public MyViewObjectImpl getCountriesVOViewUsage() {
+        return (MyViewObjectImpl) findViewObject("CountriesVOViewUsage");
+    }
+
+    /**
+     * Container's getter for EmployeesVOViewUsage.
+     * @return EmployeesVOViewUsage
+     */
+    public EmployeesVOImpl getEmployeesVOViewUsage() {
+        return (EmployeesVOImpl) findViewObject("EmployeesVOViewUsage");
+    }
+
+    /**
+     * Container's getter for DepartmentsVO1.
+     * @return DepartmentsVO1
+     */
+    public MyViewObjectImpl getDepartmentsVOViewUsage() {
+        return (MyViewObjectImpl) findViewObject("DepartmentsVOViewUsage");
+    }
 }
 
