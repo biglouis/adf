@@ -22,7 +22,7 @@
       <property
          name="y">99.36719</property>
       <property
-         name="page">/pages/Welcome.jsff</property>
+         name="page">/poc1/view/fragments/Welcome.jsff</property>
       <property
          name="exceptionHandler">false</property>
    </View>
@@ -33,7 +33,7 @@
       <property
          name="activityId">View1TaskFlow</property>
       <property
-         name="x">361.6621</property>
+         name="x">448.51172</property>
       <property
          name="y">266.5</property>
       <property
@@ -50,7 +50,7 @@
       <property
          name="activityId">View2TaskFlow</property>
       <property
-         name="x">187.96289</property>
+         name="x">274.8125</property>
       <property
          name="y">266.5</property>
       <property
@@ -68,7 +68,7 @@
       <property
          name="fromOutcome">goView1</property>
       <property
-         name="sdm:polyPoints">B56,278.3125,153.30078,361.6621,212.4336,T50</property>
+         name="sdm:polyPoints">B56,278.3125,153.30078,407.51172,266.4336,L50</property>
    </ControlFlowCase>
    <ControlFlowCase
       islink="true"
@@ -78,6 +78,33 @@
       <property
          name="fromOutcome">goView2</property>
       <property
-         name="sdm:polyPoints">B44,271.3125,153.30078,187.96289,212.4336,T50</property>
+         name="sdm:polyPoints">B44,271.3125,154.99168,274.8125,212.4336,T50</property>
+   </ControlFlowCase>
+   <TaskFlowCall
+      id="TaskFlowCall8">
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>View3TaskFlow&lt;/b>&lt;/p>&lt;p>Activity Type:  Task Flow Call&lt;/p></property>
+      <property
+         name="activityId">View3TaskFlow</property>
+      <property
+         name="x">101.11328</property>
+      <property
+         name="y">266.5</property>
+      <property
+         name="documentReference">/WEB-INF/taskflows/View3TaskFlow.xml</property>
+      <property
+         name="exceptionHandler">false</property>
+      <property
+         name="taskFlowId">View3TaskFlow</property>
+   </TaskFlowCall>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase9"
+      from="View2"
+      to="TaskFlowCall8">
+      <property
+         name="fromOutcome">goView3</property>
+      <property
+         name="sdm:polyPoints">L50,233.8125,99.30078,101.11328,212.4336,T50</property>
    </ControlFlowCase>
 </SDM>

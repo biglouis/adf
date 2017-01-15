@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <task-flow-definition id="View3TaskFlow">
+    <default-activity>View3</default-activity>
+    <transaction>
+      <new-transaction/>
+    </transaction>
+    <data-control-scope>
+      <shared/>
+    </data-control-scope>
+    <input-parameter-definition id="__6">
+      <name>inputParameter</name>
+      <value>#{pageFlowScope.taskflowController.parameter}</value>
+      <class>java.lang.String</class>
+    </input-parameter-definition>
+    <managed-bean id="__3">
+      <managed-bean-name>requestHandler</managed-bean-name>
+      <managed-bean-class>poc1.view.controller.RequestHandlerView3</managed-bean-class>
+      <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
+    <managed-bean id="__4">
+      <managed-bean-name>taskflowController</managed-bean-name>
+      <managed-bean-class>poc1.view.controller.TaskflowControllerView3</managed-bean-class>
+      <managed-bean-scope>pageFlow</managed-bean-scope>
+    </managed-bean>
+    <initializer>#{pageFlowScope.taskflowController.initializer}</initializer>
+    <finalizer>#{pageFlowScope.taskflowController.finalizer}</finalizer>
+    <view id="View3">
+      <page>/View3.jsff</page>
+    </view>
+    <task-flow-return id="Commit">
+      <outcome>
+        <name>Commit</name>
+        <commit/>
+      </outcome>
+    </task-flow-return>
+    <task-flow-return id="Rollback">
+      <outcome>
+        <name>Rollback</name>
+        <rollback/>
+      </outcome>
+    </task-flow-return>
+    <control-flow-rule id="__2">
+      <from-activity-id>View3</from-activity-id>
+      <control-flow-case id="__5">
+        <from-outcome>goRollback</from-outcome>
+        <to-activity-id>Rollback</to-activity-id>
+      </control-flow-case>
+      <control-flow-case id="__7">
+        <from-outcome>goCommit</from-outcome>
+        <to-activity-id>Commit</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <use-page-fragments/>
+  </task-flow-definition>
+</adfc-config>

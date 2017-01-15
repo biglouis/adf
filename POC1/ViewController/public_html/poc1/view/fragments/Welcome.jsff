@@ -4,9 +4,11 @@
     <c:set var="bundle" value="#{adfBundle['poc1.view.bundles.ViewControllerBundle']}"/>
     <af:showDetailHeader text="#{bundle.LABEL_TITLE}" disclosed="true" id="sdh1">
         <f:facet name="toolbar">
-            <af:button text="#{bundle.LABEL_VIEW_1}" id="b1" action="goView1"/>
-            <af:button text="#{bundle.LABEL_VIEW_2}" id="b2" action="goView2"/>
-            <af:toolbar id="t1"/>
+            <af:toolbar id="t1">
+                <af:button text="#{bundle.LABEL_VIEW_1}" id="b1" action="goView1"/>
+                <af:button text="#{bundle.LABEL_VIEW_2}" id="b2" action="goView2"/>
+                <af:button text="#{bundle.LABEL_VIEW_3}" id="b3" action="goView3"/>
+            </af:toolbar>
         </f:facet>
     </af:showDetailHeader>
 </ui:composition>
