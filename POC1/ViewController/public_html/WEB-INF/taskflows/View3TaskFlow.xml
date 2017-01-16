@@ -26,7 +26,7 @@
     <initializer>#{pageFlowScope.taskflowController.initializer}</initializer>
     <finalizer>#{pageFlowScope.taskflowController.finalizer}</finalizer>
     <view id="View3">
-      <page>/View3.jsff</page>
+      <page>/poc1/view/fragments/View3.jsff</page>
     </view>
     <task-flow-return id="Commit">
       <outcome>

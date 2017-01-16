@@ -17,7 +17,7 @@
       <property
          name="y">106.60156</property>
       <property
-         name="page">/View3.jsff</property>
+         name="page">/poc1/view/fragments/View3.jsff</property>
       <property
          name="exceptionHandler">false</property>
    </View>
