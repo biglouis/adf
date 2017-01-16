@@ -12,6 +12,34 @@
                         <af:button text="#{bundle.LABEL_ROLLBACK}" id="b1" action="goRollback"/>
                     </af:toolbar>
                 </f:facet>
+                <af:panelCollection id="pc1" featuresOff="detach statusBar columnsMenuItem">
+                    <f:facet name="toolbar"/>
+                    <af:table value="#{bindings.CountriesVOViewUsage.collectionModel}" var="row"
+                              rows="#{bindings.CountriesVOViewUsage.rangeSize}"
+                              emptyText="#{bindings.CountriesVOViewUsage.viewable ? 'No data to display.' : 'Access Denied.'}"
+                              summary="#{bundle.THIS_IS_A_TABLE}" rowBandingInterval="1"
+                              selectedRowKeys="#{bindings.CountriesVOViewUsage.collectionModel.selectedRow}"
+                              selectionListener="#{bindings.CountriesVOViewUsage.collectionModel.makeCurrent}"
+                              rowSelection="single" fetchSize="#{bindings.CountriesVOViewUsage.rangeSize}" id="t1"
+                              autoHeightRows="-1">
+                        <af:column headerText="#{bindings.CountriesVOViewUsage.hints.CountryName.label}" id="c1"
+                                   rowHeader="true">
+                            <af:outputText value="#{row.CountryName}"
+                                           shortDesc="#{bindings.CountriesVOViewUsage.hints.CountryName.tooltip}"
+                                           id="ot1"/>
+                        </af:column>
+                        <af:column headerText="#{bindings.CountriesVOViewUsage.hints.RegionId.label}" id="c2">
+                            <af:selectOneChoice value="#{row.bindings.RegionId.inputValue}"
+                                                label="#{row.bindings.RegionId.label}"
+                                                required="#{bindings.CountriesVOViewUsage.hints.RegionId.mandatory}"
+                                                shortDesc="#{bindings.CountriesVOViewUsage.hints.RegionId.tooltip}"
+                                                readOnly="true" id="soc1">
+                                <f:selectItems value="#{row.bindings.RegionId.items}" id="si1"/>
+                                <f:validator binding="#{row.bindings.RegionId.validator}"/>
+                            </af:selectOneChoice>
+                        </af:column>
+                    </af:table>
+                </af:panelCollection>
             </af:showDetailHeader>
         </f:facet>
     </af:panelStretchLayout>
