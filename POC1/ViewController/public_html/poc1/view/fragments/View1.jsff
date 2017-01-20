@@ -16,7 +16,7 @@
                            disabled="#{!bindings.Last.enabled}" partialSubmit="true" id="b5"/>
             </af:toolbar>
         </f:facet>
-        <af:panelFormLayout id="pfl1" maxColumns="2" rows="4">
+        <af:panelFormLayout id="pfl1" maxColumns="2" labelWidth="100">
             <af:inputText value="#{bindings.FirstName.inputValue}" label="#{bindings.FirstName.hints.label}"
                           required="#{bindings.FirstName.hints.mandatory}"
                           columns="#{bindings.FirstName.hints.displayWidth}"
@@ -55,12 +55,6 @@
                 <f:validator binding="#{bindings.HireDate.validator}"/>
                 <af:convertDateTime pattern="#{bindings.HireDate.format}"/>
             </af:inputDate>
-            <af:inputText value="#{bindings.JobId.inputValue}" label="#{bindings.JobId.hints.label}"
-                          required="#{bindings.JobId.hints.mandatory}" columns="#{bindings.JobId.hints.displayWidth}"
-                          maximumLength="#{bindings.JobId.hints.precision}" shortDesc="#{bindings.JobId.hints.tooltip}"
-                          id="it5">
-                <f:validator binding="#{bindings.JobId.validator}"/>
-            </af:inputText>
             <af:inputText value="#{bindings.Salary.inputValue}" label="#{bindings.Salary.hints.label}"
                           required="#{bindings.Salary.hints.mandatory}" columns="#{bindings.Salary.hints.displayWidth}"
                           maximumLength="#{bindings.Salary.hints.precision}"
@@ -90,6 +84,21 @@
                 <f:selectItems value="#{bindings.DepartmentId.items}" id="si2"/>
                 <f:validator binding="#{bindings.DepartmentId.validator}"/>
             </af:selectOneChoice>
+            <af:selectOneChoice value="#{bindings.JobId.inputValue}" label="#{bindings.JobId.label}"
+                                required="#{bindings.JobId.hints.mandatory}"
+                                shortDesc="#{bindings.JobId.hints.tooltip}" id="soc3" partialTriggers="ot2 ot1"
+                                autoSubmit="true">
+                <f:selectItems value="#{bindings.JobId.items}" id="si3"/>
+                <f:validator binding="#{bindings.JobId.validator}"/>
+            </af:selectOneChoice>
+            <af:outputText value="#{bindings.JobMinSalary.inputValue}"
+                           shortDesc="#{bindings.JobMinSalary.hints.tooltip}" id="ot2">
+                <af:convertNumber groupingUsed="false" pattern="#{bindings.JobMinSalary.format}"/>
+            </af:outputText>
+            <af:outputText value="#{bindings.JobMaxSalary.inputValue}"
+                           shortDesc="#{bindings.JobMaxSalary.hints.tooltip}" id="ot1">
+                <af:convertNumber groupingUsed="false" pattern="#{bindings.JobMaxSalary.format}"/>
+            </af:outputText>
             <f:facet name="footer">
                 <af:toolbar id="t2">
                     <af:button text="#{bundle.LABEL_COMMIT}" id="b7" action="goCommit"/>

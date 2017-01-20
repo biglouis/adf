@@ -32,11 +32,6 @@
         <Item Value="HireDate"/>
       </AttrNames>
     </attributeValues>
-    <attributeValues IterBinding="EmployeesVOViewUsageIterator" id="JobId">
-      <AttrNames>
-        <Item Value="JobId"/>
-      </AttrNames>
-    </attributeValues>
     <attributeValues IterBinding="EmployeesVOViewUsageIterator" id="Salary">
       <AttrNames>
         <Item Value="Salary"/>
@@ -51,9 +46,21 @@
           DTSupportsMRU="false" SelectItemValueMode="ListObject"/>
     <list IterBinding="EmployeesVOViewUsageIterator" StaticList="false" Uses="LOV_DepartmentId" id="DepartmentId"
           DTSupportsMRU="false" SelectItemValueMode="ListObject"/>
+    <list IterBinding="EmployeesVOViewUsageIterator" StaticList="false" Uses="LOV_JobId" id="JobId"
+          DTSupportsMRU="false" SelectItemValueMode="ListObject"/>
     <action IterBinding="EmployeesVOViewUsageIterator" id="First" RequiresUpdateModel="true" Action="first"/>
     <action IterBinding="EmployeesVOViewUsageIterator" id="Previous" RequiresUpdateModel="true" Action="previous"/>
     <action IterBinding="EmployeesVOViewUsageIterator" id="Next" RequiresUpdateModel="true" Action="next"/>
     <action IterBinding="EmployeesVOViewUsageIterator" id="Last" RequiresUpdateModel="true" Action="last"/>
+    <attributeValues IterBinding="EmployeesVOViewUsageIterator" id="JobMaxSalary">
+      <AttrNames>
+        <Item Value="JobMaxSalary"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="EmployeesVOViewUsageIterator" id="JobMinSalary">
+      <AttrNames>
+        <Item Value="JobMinSalary"/>
+      </AttrNames>
+    </attributeValues>
   </bindings>
 </pageDefinition>
