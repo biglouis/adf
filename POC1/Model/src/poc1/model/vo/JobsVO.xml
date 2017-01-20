@@ -12,7 +12,10 @@
   BindingStyle="OracleName"
   CustomQuery="false"
   SelectAllAttributes="false"
-  PageIterMode="Full">
+  PageIterMode="Full"
+  RowClass="poc1.model.extensions.MyViewRowImpl"
+  ComponentClass="poc1.model.extensions.MyViewObjectImpl"
+  DefClass="poc1.model.extensions.MyViewDefImpl">
   <EntityUsage
     Name="Jobs"
     Entity="poc1.model.eo.JobsEO"/>

@@ -9,7 +9,10 @@
   DBObjectType="table"
   DBObjectName="JOBS"
   AliasName="Jobs"
-  BindingStyle="OracleName">
+  BindingStyle="OracleName"
+  RowClass="poc1.model.extensions.MyEntityImpl"
+  DefClass="poc1.model.extensions.MyEntityDefImpl"
+  CollClass="poc1.model.extensions.MyEntityCache">
   <Attribute
     Name="JobId"
     IsNotNull="true"

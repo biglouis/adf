@@ -8,14 +8,15 @@
   InheritPersonalization="merge"
   EntityAssociation="poc1.model.assocs.EmpJobAssoc">
   <ViewLinkDefEnd
-    Name="JobsVOViewLinkAccessor"
+    Name="JobsVOViewLinkAccessorFinderName"
     Cardinality="1"
     Source="true"
     Owner="poc1.model.vo.JobsVO">
     <DesignTime>
       <Attr Name="_isUpdateable" Value="true"/>
       <Attr Name="_minCardinality" Value="1"/>
-      <Attr Name="_finderName" Value="JobsVOViewLinkAccessorFinderName"/>
+      <Attr Name="_finderName" Value="JobsVOViewLinkAccessor"/>
+      <Attr Name="_accessor" Value="true"/>
     </DesignTime>
     <AttrArray Name="Attributes">
       <Item Value="poc1.model.vo.JobsVO.JobId"/>
@@ -27,7 +28,7 @@
     Owner="poc1.model.vo.EmployeesVO">
     <DesignTime>
       <Attr Name="_isUpdateable" Value="true"/>
-      <Attr Name="_finderName" Value="EmployeesVOViewLinkAccessorFinderName"/>
+      <Attr Name="_finderName" Value="EmployeesVOViewLinkAccessor"/>
     </DesignTime>
     <AttrArray Name="Attributes">
       <Item Value="poc1.model.vo.EmployeesVO.JobId"/>

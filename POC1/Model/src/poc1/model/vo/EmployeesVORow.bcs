@@ -1,0 +1,19 @@
+//Groovy Scripts for poc1.model.vo.EmployeesVO
+
+package poc1.model.vo
+
+import oracle.jbo.script.annotation.TransientValueExpression;
+
+@TransientValueExpression(attributeName="JobMinSalary")
+def JobMinSalary_ExpressionScript_Expression()
+{
+JobsVOViewLinkAccessorFinderName?.getAttribute("MinSalary")
+}
+
+
+@TransientValueExpression(attributeName="JobMaxSalary")
+def JobMaxSalary_ExpressionScript_Expression()
+{
+JobsVOViewLinkAccessorFinderName?.getAttribute("MaxSalary")
+}
+

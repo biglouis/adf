@@ -26,7 +26,7 @@
     Owner="poc1.model.vo.EmployeesVO">
     <DesignTime>
       <Attr Name="_isUpdateable" Value="true"/>
-      <Attr Name="_finderName" Value="EmployeesVOViewLinkAccessorFinderName"/>
+      <Attr Name="_finderName" Value="EmployeesVOViewLinkAccessor"/>
     </DesignTime>
     <AttrArray Name="Attributes">
       <Item Value="poc1.model.vo.EmployeesVO.DepartmentId"/>

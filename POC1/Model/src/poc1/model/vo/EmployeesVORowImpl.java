@@ -1,8 +1,5 @@
 package poc1.model.vo;
 
-import java.math.BigDecimal;
-
-import java.sql.Timestamp;
 
 import poc1.model.extensions.MyViewRowImpl;
 // ---------------------------------------------------------------------
@@ -12,6 +9,8 @@ import poc1.model.extensions.MyViewRowImpl;
 // ---    Warning: Do not modify method signatures of generated methods.
 // ---------------------------------------------------------------------
 public class EmployeesVORowImpl extends MyViewRowImpl {
+
+
     public static final int ENTITY_EMPLOYEES = 0;
 
     /**
@@ -29,12 +28,17 @@ public class EmployeesVORowImpl extends MyViewRowImpl {
         CommissionPct,
         ManagerId,
         DepartmentId,
-        EmployeesVO,
-        DepartmentsVO,
-        JobHistoryVO,
-        DepartmentsVO1,
-        EmployeesVO1;
+        JobMinSalary,
+        JobMaxSalary,
+        EmployeesVOViewLinkAccessor,
+        DepartmentsVOViewLinkAccessor,
+        JobHistoryVOViewLinkAccessor,
+        JobsVOViewLinkAccessor,
+        DepartmentsVOViewAccessor,
+        EmployeesVOViewAccessor,
+        JobsVOViewAccessor;
         private static AttributesEnum[] vals = null;
+        ;
         private static final int firstIndex = 0;
 
         protected int index() {
@@ -56,6 +60,7 @@ public class EmployeesVORowImpl extends MyViewRowImpl {
             return vals;
         }
     }
+
     public static final int EMPLOYEEID = AttributesEnum.EmployeeId.index();
     public static final int FIRSTNAME = AttributesEnum.FirstName.index();
     public static final int LASTNAME = AttributesEnum.LastName.index();
@@ -67,11 +72,15 @@ public class EmployeesVORowImpl extends MyViewRowImpl {
     public static final int COMMISSIONPCT = AttributesEnum.CommissionPct.index();
     public static final int MANAGERID = AttributesEnum.ManagerId.index();
     public static final int DEPARTMENTID = AttributesEnum.DepartmentId.index();
-    public static final int EMPLOYEESVO = AttributesEnum.EmployeesVO.index();
-    public static final int DEPARTMENTSVO = AttributesEnum.DepartmentsVO.index();
-    public static final int JOBHISTORYVO = AttributesEnum.JobHistoryVO.index();
-    public static final int DEPARTMENTSVO1 = AttributesEnum.DepartmentsVO1.index();
-    public static final int EMPLOYEESVO1 = AttributesEnum.EmployeesVO1.index();
+    public static final int JOBMINSALARY = AttributesEnum.JobMinSalary.index();
+    public static final int JOBMAXSALARY = AttributesEnum.JobMaxSalary.index();
+    public static final int EMPLOYEESVOVIEWLINKACCESSOR = AttributesEnum.EmployeesVOViewLinkAccessor.index();
+    public static final int DEPARTMENTSVOVIEWLINKACCESSOR = AttributesEnum.DepartmentsVOViewLinkAccessor.index();
+    public static final int JOBHISTORYVOVIEWLINKACCESSOR = AttributesEnum.JobHistoryVOViewLinkAccessor.index();
+    public static final int JOBSVOVIEWLINKACCESSOR = AttributesEnum.JobsVOViewLinkAccessor.index();
+    public static final int DEPARTMENTSVOVIEWACCESSOR = AttributesEnum.DepartmentsVOViewAccessor.index();
+    public static final int EMPLOYEESVOVIEWACCESSOR = AttributesEnum.EmployeesVOViewAccessor.index();
+    public static final int JOBSVOVIEWACCESSOR = AttributesEnum.JobsVOViewAccessor.index();
 
     /**
      * This is the default constructor (do not remove).

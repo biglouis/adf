@@ -15,7 +15,7 @@
     <DesignTime>
       <Attr Name="_isUpdateable" Value="true"/>
       <Attr Name="_minCardinality" Value="1"/>
-      <Attr Name="_finderName" Value="JobsVOViewLinkAccessorFinderName"/>
+      <Attr Name="_finderName" Value="JobsVOViewLinkAccessor"/>
     </DesignTime>
     <AttrArray Name="Attributes">
       <Item Value="poc1.model.vo.JobsVO.JobId"/>
@@ -27,7 +27,7 @@
     Owner="poc1.model.vo.JobHistoryVO">
     <DesignTime>
       <Attr Name="_isUpdateable" Value="true"/>
-      <Attr Name="_finderName" Value="JobHistoryVOViewLinkAccessorFinderName"/>
+      <Attr Name="_finderName" Value="JobHistoryVOViewLinkAccessor"/>
     </DesignTime>
     <AttrArray Name="Attributes">
       <Item Value="poc1.model.vo.JobHistoryVO.JobId"/>

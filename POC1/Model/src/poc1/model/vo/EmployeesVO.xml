@@ -30,6 +30,10 @@
     Name="EmployeesVOViewAccessor"
     ViewObjectName="poc1.model.vo.EmployeesVO"
     RowLevelBinds="true"/>
+  <ViewAccessor
+    Name="JobsVOViewAccessor"
+    ViewObjectName="poc1.model.vo.JobsVO"
+    RowLevelBinds="true"/>
   <ListBinding
     Name="LOV_DepartmentId"
     ListVOName="DepartmentsVOViewAccessor"
@@ -66,6 +70,24 @@
     </AttrArray>
     <DisplayCriteria/>
   </ListBinding>
+  <ListBinding
+    Name="LOV_JobId"
+    ListVOName="JobsVOViewAccessor"
+    NullValueFlag="start"
+    NullValueId="${adfBundle['oracle.javatools.resourcebundle.SystemBundle']['NULL_VALUE_RESID']}"
+    MRUCount="0">
+    <AttrArray Name="AttrNames">
+      <Item Value="JobId"/>
+    </AttrArray>
+    <AttrArray Name="AttrExpressions"/>
+    <AttrArray Name="ListAttrNames">
+      <Item Value="JobId"/>
+    </AttrArray>
+    <AttrArray Name="ListDisplayAttrNames">
+      <Item Value="JobTitle"/>
+    </AttrArray>
+    <DisplayCriteria/>
+  </ListBinding>
   <EntityUsage
     Name="Employees"
     Entity="poc1.model.eo.EmployeesEO"/>
@@ -75,7 +97,13 @@
     PrecisionRule="true"
     EntityAttrName="EmployeeId"
     EntityUsage="Employees"
-    AliasName="EMPLOYEE_ID"/>
+    AliasName="EMPLOYEE_ID">
+    <Dependencies>
+      <Item
+        Value="JobId"
+        Type="notify"/>
+    </Dependencies>
+  </ViewAttribute>
   <ViewAttribute
     Name="FirstName"
     PrecisionRule="true"
@@ -116,7 +144,15 @@
     PrecisionRule="true"
     EntityAttrName="JobId"
     EntityUsage="Employees"
-    AliasName="JOB_ID"/>
+    AliasName="JOB_ID"
+    LOVName="LOV_JobId">
+    <Properties>
+      <SchemaBasedProperties>
+        <CONTROLTYPE
+          Value="choice"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </ViewAttribute>
   <ViewAttribute
     Name="Salary"
     PrecisionRule="true"
@@ -157,6 +193,44 @@
       </SchemaBasedProperties>
     </Properties>
   </ViewAttribute>
+  <ViewAttribute
+    Name="JobMinSalary"
+    IsSelected="false"
+    IsPersistent="false"
+    PrecisionRule="true"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    AliasName="VIEW_ATTR"
+    SQLType="NUMERIC"
+    IsUpdateable="false">
+    <TransientExpression
+      Name="ExpressionScript"
+      CodeSourceName="EmployeesVORow"/>
+    <Dependencies>
+      <Item
+        Value="JobId"
+        Type="notify"/>
+    </Dependencies>
+  </ViewAttribute>
+  <ViewAttribute
+    Name="JobMaxSalary"
+    IsUpdateable="false"
+    IsSelected="false"
+    IsPersistent="false"
+    PrecisionRule="true"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    AliasName="VIEW_ATTR"
+    SQLType="NUMERIC">
+    <TransientExpression
+      Name="ExpressionScript"
+      CodeSourceName="EmployeesVORow"/>
+    <Dependencies>
+      <Item
+        Value="JobId"
+        Type="notify"/>
+    </Dependencies>
+  </ViewAttribute>
   <ViewLinkAccessor
     Name="EmployeesVOViewLinkAccessor"
     ViewLink="poc1.model.links.EmpManagerLink"
@@ -171,5 +245,11 @@
     Name="JobHistoryVOViewLinkAccessor"
     ViewLink="poc1.model.links.JhistEmpLink"
     Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <ViewLinkAccessor
+    Name="JobsVOViewLinkAccessorFinderName"
+    ViewLink="poc1.model.links.EmpJobLink"
+    Type="poc1.model.extensions.MyViewRowImpl"
+    Reversed="true"
     IsUpdateable="false"/>
 </ViewObject>
