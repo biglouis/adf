@@ -7,13 +7,13 @@ import oracle.jbo.script.annotation.TransientValueExpression;
 @TransientValueExpression(attributeName="JobMinSalary")
 def JobMinSalary_ExpressionScript_Expression()
 {
-JobsVOViewLinkAccessorFinderName?.getAttribute("MinSalary")
+JobsVOViewAccessor.getAllRowsInRange().find{it['jobId']==JobId}['minSalary']
 }
 
 
 @TransientValueExpression(attributeName="JobMaxSalary")
 def JobMaxSalary_ExpressionScript_Expression()
 {
-JobsVOViewLinkAccessorFinderName?.getAttribute("MaxSalary")
+JobsVOViewAccessor.getAllRowsInRange().find{it['jobId']==JobId}['maxSalary']
 }
 
