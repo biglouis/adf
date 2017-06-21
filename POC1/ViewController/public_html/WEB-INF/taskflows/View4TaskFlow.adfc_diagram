@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SDM>
+   <OverallProperties
+      id="OverallProperties1"/>
+   <View
+      id="View2">
+      <property
+         name="activityId">View4</property>
+      <property
+         name="pageFragment">true</property>
+      <property
+         name="x">375.0</property>
+      <property
+         name="start">true</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>View4&lt;/b> (Default Activity)&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="y">152.60156</property>
+      <property
+         name="page">/poc1/view/fragments/View4.jsff</property>
+      <property
+         name="exceptionHandler">false</property>
+   </View>
+   <TaskFlowReturn
+      id="TaskFlowReturn3">
+      <property
+         name="activityId">Commit</property>
+      <property
+         name="x">265.0</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>Commit&lt;/b>&lt;/p>&lt;p>Activity Type:  Task Flow Return&lt;/p>&lt;p>Outcome:  Commit&lt;/p></property>
+      <property
+         name="y">327.13672</property>
+      <property
+         name="finish">true</property>
+      <property
+         name="exceptionHandler">false</property>
+   </TaskFlowReturn>
+   <TaskFlowReturn
+      id="TaskFlowReturn4">
+      <property
+         name="activityId">Return</property>
+      <property
+         name="x">495.0</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>Return&lt;/b>&lt;/p>&lt;p>Activity Type:  Task Flow Return&lt;/p>&lt;p>Outcome:  Rollback&lt;/p></property>
+      <property
+         name="y">331.33594</property>
+      <property
+         name="finish">true</property>
+      <property
+         name="exceptionHandler">false</property>
+   </TaskFlowReturn>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase5"
+      from="View2"
+      to="TaskFlowReturn3">
+      <property
+         name="fromOutcome">goCommit</property>
+      <property
+         name="sdm:polyPoints">B44,371.5,206.53516,265.0,273.13672,T50</property>
+   </ControlFlowCase>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase6"
+      from="View2"
+      to="TaskFlowReturn4">
+      <property
+         name="fromOutcome">goRollback</property>
+      <property
+         name="sdm:polyPoints">B56,378.5,206.53516,495.0,277.53516,T50</property>
+   </ControlFlowCase>
+</SDM>

@@ -34,6 +34,12 @@
         <id>View3TaskFlow</id>
       </task-flow-reference>
     </task-flow-call>
+    <task-flow-call id="View4TaskFlow">
+      <task-flow-reference>
+        <document>/WEB-INF/taskflows/View4TaskFlow.xml</document>
+        <id>View4TaskFlow</id>
+      </task-flow-reference>
+    </task-flow-call>
     <control-flow-rule id="__1">
       <from-activity-id>Welcome</from-activity-id>
       <control-flow-case id="__2">
@@ -47,6 +53,10 @@
       <control-flow-case id="__6">
         <from-outcome>goView3</from-outcome>
         <to-activity-id>View3TaskFlow</to-activity-id>
+      </control-flow-case>
+      <control-flow-case id="__7">
+        <from-outcome>goView4</from-outcome>
+        <to-activity-id>View4TaskFlow</to-activity-id>
       </control-flow-case>
     </control-flow-rule>
     <use-page-fragments/>

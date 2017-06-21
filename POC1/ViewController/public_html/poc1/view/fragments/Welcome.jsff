@@ -8,6 +8,7 @@
                 <af:button text="#{bundle.LABEL_VIEW_1}" id="b1" action="goView1"/>
                 <af:button text="#{bundle.LABEL_VIEW_2}" id="b2" action="goView2"/>
                 <af:button text="#{bundle.LABEL_VIEW_3}" id="b3" action="goView3"/>
+                <af:button text="#{bundle.LABEL_VIEW_4}" id="b4" action="goView4"/>
             </af:toolbar>
         </f:facet>
     </af:showDetailHeader>

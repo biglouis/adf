@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+                xmlns:f="http://java.sun.com/jsf/core" xmlns:c="http://java.sun.com/jsp/jstl/core">
+    <c:set var="bundle" value="#{adfBundle['poc1.view.bundles.ViewControllerBundle']}"/>
+    <af:panelStretchLayout id="psl1">
+        <f:facet name="center">
+            <af:showDetailHeader text="#{bundle.LABEL_VIEW_4}: #{pageFlowScope.taskflowController.parameter}"
+                                 disclosed="true" id="sdh1">
+                <f:facet name="toolbar">
+                    <af:toolbar id="t3">
+                        <af:button text="#{bundle.LABEL_COMMIT}" id="b2" action="goCommit"/>
+                        <af:button text="#{bundle.LABEL_ROLLBACK}" id="b1" action="goRollback"/>
+                    </af:toolbar>
+                </f:facet>
+                <af:panelCollection id="pc1" featuresOff="detach statusBar columnsMenuItem">
+                    <f:facet name="toolbar"/>
+                </af:panelCollection>
+            </af:showDetailHeader>
+        </f:facet>
+    </af:panelStretchLayout>
+</ui:composition>

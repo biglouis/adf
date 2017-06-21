@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <task-flow-definition id="View4TaskFlow">
+    <default-activity>View4</default-activity>
+    <transaction>
+      <new-transaction/>
+    </transaction>
+    <data-control-scope>
+      <shared/>
+    </data-control-scope>
+    <managed-bean id="__4">
+      <managed-bean-name>taskflowController</managed-bean-name>
+      <managed-bean-class>poc1.view.controller.TaskflowControllerView4</managed-bean-class>
+      <managed-bean-scope>pageFlow</managed-bean-scope>
+    </managed-bean>
+    <view id="View4">
+      <page>/poc1/view/fragments/View4.jsff</page>
+    </view>
+    <task-flow-return id="Commit">
+      <outcome>
+        <name>Commit</name>
+        <commit/>
+      </outcome>
+    </task-flow-return>
+    <task-flow-return id="Return">
+      <outcome>
+        <name>Rollback</name>
+        <rollback/>
+      </outcome>
+    </task-flow-return>
+    <control-flow-rule id="__1">
+      <from-activity-id>View4</from-activity-id>
+      <control-flow-case id="__2">
+        <from-outcome>goCommit</from-outcome>
+        <to-activity-id>Commit</to-activity-id>
+      </control-flow-case>
+      <control-flow-case id="__3">
+        <from-outcome>goRollback</from-outcome>
+        <to-activity-id>Return</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <use-page-fragments/>
+  </task-flow-definition>
+</adfc-config>

@@ -16,95 +16,107 @@
                            disabled="#{!bindings.Last.enabled}" partialSubmit="true" id="b5"/>
             </af:toolbar>
         </f:facet>
-        <af:panelFormLayout id="pfl1" maxColumns="2" labelWidth="100">
-            <af:inputText value="#{bindings.FirstName.inputValue}" label="#{bindings.FirstName.hints.label}"
-                          required="#{bindings.FirstName.hints.mandatory}"
-                          columns="#{bindings.FirstName.hints.displayWidth}"
-                          maximumLength="#{bindings.FirstName.hints.precision}"
-                          shortDesc="#{bindings.FirstName.hints.tooltip}" id="it1"
-                          valueChangeListener="#{requestHandler.onChangeFirstName}" autoSubmit="true"
-                          binding="#{requestHandler.firstName}">
-                <f:validator binding="#{bindings.FirstName.validator}"/>
-            </af:inputText>
-            <af:inputText value="#{bindings.LastName.inputValue}" label="#{bindings.LastName.hints.label}"
-                          required="#{bindings.LastName.hints.mandatory}"
-                          columns="#{bindings.LastName.hints.displayWidth}"
-                          maximumLength="#{bindings.LastName.hints.precision}"
-                          shortDesc="#{bindings.LastName.hints.tooltip}" id="it2"
-                          valueChangeListener="#{requestHandler.onChangeLastName}" autoSubmit="true"
-                          binding="#{requestHandler.lastName}">
-                <f:validator binding="#{bindings.LastName.validator}"/>
-            </af:inputText>
-            <af:inputText value="#{bindings.Email.inputValue}" label="#{bindings.Email.hints.label}"
-                          required="#{bindings.Email.hints.mandatory}" columns="#{bindings.Email.hints.displayWidth}"
-                          maximumLength="#{bindings.Email.hints.precision}" shortDesc="#{bindings.Email.hints.tooltip}"
-                          id="it3">
-                <f:validator binding="#{bindings.Email.validator}"/>
-            </af:inputText>
-            <af:inputText value="#{bindings.PhoneNumber.inputValue}" label="#{bindings.PhoneNumber.hints.label}"
-                          required="#{bindings.PhoneNumber.hints.mandatory}"
-                          columns="#{bindings.PhoneNumber.hints.displayWidth}"
-                          maximumLength="#{bindings.PhoneNumber.hints.precision}"
-                          shortDesc="#{bindings.PhoneNumber.hints.tooltip}" id="it4">
-                <f:validator binding="#{bindings.PhoneNumber.validator}"/>
-            </af:inputText>
-            <af:inputDate value="#{bindings.HireDate.inputValue}" label="#{bindings.HireDate.hints.label}"
-                          required="#{bindings.HireDate.hints.mandatory}"
-                          columns="#{bindings.HireDate.hints.displayWidth}"
-                          shortDesc="#{bindings.HireDate.hints.tooltip}" id="id1">
-                <f:validator binding="#{bindings.HireDate.validator}"/>
-                <af:convertDateTime pattern="#{bindings.HireDate.format}"/>
-            </af:inputDate>
-            <af:inputText value="#{bindings.Salary.inputValue}" label="#{bindings.Salary.hints.label}"
-                          required="#{bindings.Salary.hints.mandatory}" columns="#{bindings.Salary.hints.displayWidth}"
-                          maximumLength="#{bindings.Salary.hints.precision}"
-                          shortDesc="#{bindings.Salary.hints.tooltip}" id="it6">
-                <f:validator binding="#{bindings.Salary.validator}"/>
-                <af:convertNumber groupingUsed="false" pattern="#{bindings.Salary.format}"/>
-            </af:inputText>
-            <af:inputText value="#{bindings.CommissionPct.inputValue}" label="#{bindings.CommissionPct.hints.label}"
-                          required="#{bindings.CommissionPct.hints.mandatory}"
-                          columns="#{bindings.CommissionPct.hints.displayWidth}"
-                          maximumLength="#{bindings.CommissionPct.hints.precision}"
-                          shortDesc="#{bindings.CommissionPct.hints.tooltip}" id="it7">
-                <f:validator binding="#{bindings.CommissionPct.validator}"/>
-                <af:convertNumber groupingUsed="false" pattern="#{bindings.CommissionPct.format}"/>
-            </af:inputText>
-            <af:selectOneChoice value="#{bindings.ManagerId.inputValue}" label="#{bindings.ManagerId.label}"
-                                required="#{bindings.ManagerId.hints.mandatory}"
-                                shortDesc="#{bindings.ManagerId.hints.tooltip}" id="soc1"
-                                binding="#{requestHandler.managerId}"
-                                valueChangeListener="#{requestHandler.onChangeManagerId}" autoSubmit="true">
-                <f:selectItems value="#{bindings.ManagerId.items}" id="si1"/>
-                <f:validator binding="#{bindings.ManagerId.validator}"/>
-            </af:selectOneChoice>
-            <af:selectOneChoice value="#{bindings.DepartmentId.inputValue}" label="#{bindings.DepartmentId.label}"
-                                required="#{bindings.DepartmentId.hints.mandatory}"
-                                shortDesc="#{bindings.DepartmentId.hints.tooltip}" id="soc2">
-                <f:selectItems value="#{bindings.DepartmentId.items}" id="si2"/>
-                <f:validator binding="#{bindings.DepartmentId.validator}"/>
-            </af:selectOneChoice>
-            <af:selectOneChoice value="#{bindings.JobId.inputValue}" label="#{bindings.JobId.label}"
-                                required="#{bindings.JobId.hints.mandatory}"
-                                shortDesc="#{bindings.JobId.hints.tooltip}" id="soc3" partialTriggers="ot2 ot1"
-                                autoSubmit="true">
-                <f:selectItems value="#{bindings.JobId.items}" id="si3"/>
-                <f:validator binding="#{bindings.JobId.validator}"/>
-            </af:selectOneChoice>
-            <af:outputText value="#{bindings.JobMinSalary.inputValue}"
-                           shortDesc="#{bindings.JobMinSalary.hints.tooltip}" id="ot2">
-                <af:convertNumber groupingUsed="false" pattern="#{bindings.JobMinSalary.format}"/>
-            </af:outputText>
-            <af:outputText value="#{bindings.JobMaxSalary.inputValue}"
-                           shortDesc="#{bindings.JobMaxSalary.hints.tooltip}" id="ot1">
-                <af:convertNumber groupingUsed="false" pattern="#{bindings.JobMaxSalary.format}"/>
-            </af:outputText>
-            <f:facet name="footer">
-                <af:toolbar id="t2">
-                    <af:button text="#{bundle.LABEL_COMMIT}" id="b7" action="goCommit"/>
-                    <af:button text="#{bundle.LABEL_ROLLBACK}" id="b1" action="goRollback" immediate="true"/>
-                </af:toolbar>
-            </f:facet>
-        </af:panelFormLayout>
+        <af:panelTabbed position="above" id="pt1">
+            <af:showDetailItem id="tab1" text="#{bundle.ErsterReiter}" disclosed="true">
+                <af:panelFormLayout id="pfl1" maxColumns="2" labelWidth="100">
+                    <af:inputText value="#{bindings.FirstName.inputValue}" label="#{bindings.FirstName.hints.label}"
+                                  required="#{bindings.FirstName.hints.mandatory}"
+                                  columns="#{bindings.FirstName.hints.displayWidth}"
+                                  maximumLength="#{bindings.FirstName.hints.precision}"
+                                  shortDesc="#{bindings.FirstName.hints.tooltip}" id="it1"
+                                  valueChangeListener="#{requestHandler.onChangeFirstName}" autoSubmit="true"
+                                  binding="#{requestHandler.firstName}">
+                        <f:validator binding="#{bindings.FirstName.validator}"/>
+                    </af:inputText>
+                    <af:inputText value="#{bindings.LastName.inputValue}" label="#{bindings.LastName.hints.label}"
+                                  required="#{bindings.LastName.hints.mandatory}"
+                                  columns="#{bindings.LastName.hints.displayWidth}"
+                                  maximumLength="#{bindings.LastName.hints.precision}"
+                                  shortDesc="#{bindings.LastName.hints.tooltip}" id="it2"
+                                  valueChangeListener="#{requestHandler.onChangeLastName}" autoSubmit="true"
+                                  binding="#{requestHandler.lastName}">
+                        <f:validator binding="#{bindings.LastName.validator}"/>
+                    </af:inputText>
+                    <af:inputText value="#{bindings.Email.inputValue}" label="#{bindings.Email.hints.label}"
+                                  required="#{bindings.Email.hints.mandatory}"
+                                  columns="#{bindings.Email.hints.displayWidth}"
+                                  maximumLength="#{bindings.Email.hints.precision}"
+                                  shortDesc="#{bindings.Email.hints.tooltip}" id="it3">
+                        <f:validator binding="#{bindings.Email.validator}"/>
+                    </af:inputText>
+                    <af:inputText value="#{bindings.PhoneNumber.inputValue}" label="#{bindings.PhoneNumber.hints.label}"
+                                  required="#{bindings.PhoneNumber.hints.mandatory}"
+                                  columns="#{bindings.PhoneNumber.hints.displayWidth}"
+                                  maximumLength="#{bindings.PhoneNumber.hints.precision}"
+                                  shortDesc="#{bindings.PhoneNumber.hints.tooltip}" id="it4">
+                        <f:validator binding="#{bindings.PhoneNumber.validator}"/>
+                    </af:inputText>
+                    <af:inputDate value="#{bindings.HireDate.inputValue}" label="#{bindings.HireDate.hints.label}"
+                                  required="#{bindings.HireDate.hints.mandatory}"
+                                  columns="#{bindings.HireDate.hints.displayWidth}"
+                                  shortDesc="#{bindings.HireDate.hints.tooltip}" id="id1">
+                        <f:validator binding="#{bindings.HireDate.validator}"/>
+                        <af:convertDateTime pattern="#{bindings.HireDate.format}"/>
+                    </af:inputDate>
+                    <af:inputText value="#{bindings.Salary.inputValue}" label="#{bindings.Salary.hints.label}"
+                                  required="#{bindings.Salary.hints.mandatory}"
+                                  columns="#{bindings.Salary.hints.displayWidth}"
+                                  maximumLength="#{bindings.Salary.hints.precision}"
+                                  shortDesc="#{bindings.Salary.hints.tooltip}" id="it6">
+                        <f:validator binding="#{bindings.Salary.validator}"/>
+                        <af:convertNumber groupingUsed="false" pattern="#{bindings.Salary.format}"/>
+                    </af:inputText>
+                    <af:inputText value="#{bindings.CommissionPct.inputValue}"
+                                  label="#{bindings.CommissionPct.hints.label}"
+                                  required="#{bindings.CommissionPct.hints.mandatory}"
+                                  columns="#{bindings.CommissionPct.hints.displayWidth}"
+                                  maximumLength="#{bindings.CommissionPct.hints.precision}"
+                                  shortDesc="#{bindings.CommissionPct.hints.tooltip}" id="it7">
+                        <f:validator binding="#{bindings.CommissionPct.validator}"/>
+                        <af:convertNumber groupingUsed="false" pattern="#{bindings.CommissionPct.format}"/>
+                    </af:inputText>
+                    <f:facet name="footer">
+                        <af:toolbar id="t2">
+                            <af:button text="#{bundle.LABEL_COMMIT}" id="b7" action="goCommit"/>
+                            <af:button text="#{bundle.LABEL_ROLLBACK}" id="b1" action="goRollback" immediate="true"/>
+                        </af:toolbar>
+                    </f:facet>
+                </af:panelFormLayout>
+            </af:showDetailItem>
+            <af:showDetailItem id="tab2" text="#{bundle.ZweiterReiter}">
+                <af:panelFormLayout id="pfl2">
+                    <af:outputText value="#{bindings.JobMaxSalary.inputValue}"
+                                   shortDesc="#{bindings.JobMaxSalary.hints.tooltip}" id="ot1">
+                        <af:convertNumber groupingUsed="false" pattern="#{bindings.JobMaxSalary.format}"/>
+                    </af:outputText>
+                    <af:outputText value="#{bindings.JobMinSalary.inputValue}"
+                                   shortDesc="#{bindings.JobMinSalary.hints.tooltip}" id="ot2">
+                        <af:convertNumber groupingUsed="false" pattern="#{bindings.JobMinSalary.format}"/>
+                    </af:outputText>
+                    <af:selectOneChoice value="#{bindings.JobId.inputValue}" label="#{bindings.JobId.label}"
+                                        required="#{bindings.JobId.hints.mandatory}"
+                                        shortDesc="#{bindings.JobId.hints.tooltip}" id="soc3" partialTriggers="ot2 ot1"
+                                        autoSubmit="true">
+                        <f:selectItems value="#{bindings.JobId.items}" id="si3"/>
+                        <f:validator binding="#{bindings.JobId.validator}"/>
+                    </af:selectOneChoice>
+                    <af:selectOneChoice value="#{bindings.DepartmentId.inputValue}"
+                                        label="#{bindings.DepartmentId.label}"
+                                        required="#{bindings.DepartmentId.hints.mandatory}"
+                                        shortDesc="#{bindings.DepartmentId.hints.tooltip}" id="soc2">
+                        <f:selectItems value="#{bindings.DepartmentId.items}" id="si2"/>
+                        <f:validator binding="#{bindings.DepartmentId.validator}"/>
+                    </af:selectOneChoice>
+                    <af:selectOneChoice value="#{bindings.ManagerId.inputValue}" label="#{bindings.ManagerId.label}"
+                                        required="#{bindings.ManagerId.hints.mandatory}"
+                                        shortDesc="#{bindings.ManagerId.hints.tooltip}" id="soc1"
+                                        binding="#{requestHandler.managerId}"
+                                        valueChangeListener="#{requestHandler.onChangeManagerId}" autoSubmit="true">
+                        <f:selectItems value="#{bindings.ManagerId.items}" id="si1"/>
+                        <f:validator binding="#{bindings.ManagerId.validator}"/>
+                    </af:selectOneChoice>
+                </af:panelFormLayout>
+            </af:showDetailItem>
+        </af:panelTabbed>
     </af:showDetailHeader>
 </ui:composition>
