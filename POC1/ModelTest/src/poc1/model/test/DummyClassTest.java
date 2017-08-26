@@ -4,47 +4,45 @@ import org.junit.After;
 import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
+import static org.mockito.Mockito.*;
+
+import org.powermock.core.classloader.annotations.PrepareForTest;
+import org.powermock.modules.junit4.PowerMockRunner;
+
+//@RunWith(PowerMockRunner.class)
+//@PrepareForTest(DummyClass.class)
 public class DummyClassTest {
 
     private int idToOverwrite;
-    private TestFixture fixture = new TestFixture();
+    private TestFixture tf = new TestFixture();
+    private TestableDummyClass dc;
+    //    private DummyClass mockedDc;
 
     public DummyClassTest() {
     }
 
+    /**
+     * @see DummyClass#getIdToOverwrite()
+     */
+    @Test
+    public void getIdToOverwrite_should_deliver_id() {
+        idToOverwrite = 1;
+
+        assertTrue(null, this.dc.getIdToOverwrite() == idToOverwrite);
+    }
+
     @Before
     public void setUp() throws Exception {
-        fixture.setUp();
+        //        mockedDc = mock(DummyClass.class);
+        dc = new TestableDummyClass();
+        tf.setUp();
     }
 
     @After
     public void tearDown() throws Exception {
-        fixture.tearDown();
-    }
-
-    /**
-     * @see DummyClass#getIdToOverwrite()
-     */
-    @Test
-    public void id_to_overwrite_shloud_deliver_1() {
-        idToOverwrite = 1;
-        DummyClass dc = new TestableDummyClass();
-        int ret = dc.getIdToOverwrite();
-
-        assertTrue("Id is 1", ret == 1);
-    }
-
-    /**
-     * @see DummyClass#getIdToOverwrite()
-     */
-    @Test
-    public void id_to_overwrite_should_deliver_2() {
-        idToOverwrite = 2;
-        DummyClass dc = new TestableDummyClass();
-        int ret = dc.getIdToOverwrite();
-
-        assertTrue("Id is 2", ret == 2);
+        tf.tearDown();
     }
 
     /**
