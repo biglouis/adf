@@ -1,23 +1,16 @@
 package poc1.model.test;
 
+
 public class DummyClass {
     public DummyClass() {
         super();
     }
     
-    public int getIdToOverwrite(){
-        return getIdToOverwriteInternal();
+    public int getId(){
+        return getIdInternal();
     }
     
-    protected int getIdToOverwriteInternal(){
-        return 0;
-    }
-
-    public int getIdToMock(){
-        return getIdToMockInternal();
-    }
-    
-    private int getIdToMockInternal(){
+    protected int getIdInternal(){
         return 0;
     }
 }
