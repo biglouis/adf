@@ -6,19 +6,22 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import static org.mockito.Mockito.*;
+import org.mockito.Mockito;
 
+import org.powermock.api.mockito.PowerMockito;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
 
-//@RunWith(PowerMockRunner.class)
-//@PrepareForTest(DummyClass.class)
+@RunWith(PowerMockRunner.class)
+@PrepareForTest(DummyClass.class)
 public class DummyClassTest {
 
-    private int idToOverwrite;
+    private static final int ID_TO_VERIFY = 1;
+    private static final String MOCKED_ID_METHOD = "getIdToMockInternal";
     private TestFixture tf = new TestFixture();
-    private TestableDummyClass dc;
-    //    private DummyClass mockedDc;
+
+    private TestableDummyClass tdc = new TestableDummyClass();
+    private DummyClass mdc = PowerMockito.spy(new DummyClass());
 
     public DummyClassTest() {
     }
@@ -28,16 +31,21 @@ public class DummyClassTest {
      */
     @Test
     public void getIdToOverwrite_should_deliver_id() {
-        idToOverwrite = 1;
+        assertEquals(tdc.getIdToOverwrite(), ID_TO_VERIFY);
+    }
 
-        assertTrue(null, this.dc.getIdToOverwrite() == idToOverwrite);
+    /**
+     * @see DummyClass#getIdToMock()
+     */
+    @Test
+    public void getIdToMock_should_deliver_id() {
+        assertEquals(mdc.getIdToMock(), ID_TO_VERIFY);
     }
 
     @Before
     public void setUp() throws Exception {
-        //        mockedDc = mock(DummyClass.class);
-        dc = new TestableDummyClass();
         tf.setUp();
+        PowerMockito.doReturn(ID_TO_VERIFY).when(mdc, MOCKED_ID_METHOD);
     }
 
     @After
@@ -51,7 +59,7 @@ public class DummyClassTest {
     public class TestableDummyClass extends DummyClass {
         @Override
         protected int getIdToOverwriteInternal() {
-            return idToOverwrite;
+            return ID_TO_VERIFY;
         }
     }
 }
