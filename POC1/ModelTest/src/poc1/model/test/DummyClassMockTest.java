@@ -25,8 +25,8 @@ public class DummyClassMockTest {
      * @see DummyClass#getId()
      */
     @Test
-    public void getId_should_deliver_id() {
-        assertEquals(dc.getId(), ID_TO_VERIFY);
+    public void testGetId() {
+        assertEquals(ID_TO_VERIFY, dc.getId());
     }
 
     @Before
