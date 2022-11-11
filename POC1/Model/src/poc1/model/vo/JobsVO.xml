@@ -4,7 +4,7 @@
 <ViewObject
   xmlns="http://xmlns.oracle.com/bc4j"
   Name="JobsVO"
-  Version="12.2.1.16.48"
+  Version="12.2.1.20.47"
   InheritPersonalization="merge"
   SelectListFlags="1"
   FromListFlags="1"
@@ -13,9 +13,13 @@
   CustomQuery="false"
   SelectAllAttributes="false"
   PageIterMode="Full"
-  RowClass="poc1.model.extensions.MyViewRowImpl"
+  RowClass="poc1.model.vo.JobsVORowImpl"
   ComponentClass="poc1.model.extensions.MyViewObjectImpl"
   DefClass="poc1.model.extensions.MyViewDefImpl">
+  <DesignTime>
+    <Attr Name="_codeGenFlag2" Value="Access"/>
+    <Attr Name="_isCodegen" Value="true"/>
+  </DesignTime>
   <EntityUsage
     Name="Jobs"
     Entity="poc1.model.eo.JobsEO"/>

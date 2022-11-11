@@ -4,7 +4,7 @@
 <ViewObject
   xmlns="http://xmlns.oracle.com/bc4j"
   Name="EmployeesVO"
-  Version="12.2.1.16.48"
+  Version="12.2.1.20.47"
   InheritPersonalization="merge"
   SelectListFlags="1"
   FromListFlags="1"
